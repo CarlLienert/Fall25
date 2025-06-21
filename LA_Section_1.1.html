@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LA_Section_1.1</title>
+</head>
+<body>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<p>LA_Section_1.1</p>
+
+<p><strong>2.</strong></p>
+
+<p><span class="math">\[\begin{bmatrix}
+2 &amp; 4 &amp; -4\\
+5  &amp; 7 &amp; 11\\
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\(\frac{1}{2}\cdot R1 \rightarrow R1\)</span>:</p>
+
+<p><span class="math">\[\begin{bmatrix}
+1 &amp; 2 &amp; -2\\
+5  &amp; 7 &amp; 11\\
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\(-5\cdot R1 + R2 \rightarrow R2\)</span>:</p>
+
+<p><span class="math">\[\begin{bmatrix}
+1 &amp; 2 &amp; -2\\
+0  &amp; -3 &amp; 21\\
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\(-\frac{1}{3}\cdot R2 \rightarrow R2\)</span>:</p>
+
+<p><span class="math">\[\begin{bmatrix}
+1 &amp; 2 &amp; -2\\
+0  &amp; 1 &amp; -7\\
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\(-2 \cdot R2 + R1 \rightarrow R1\)</span>:</p>
+
+<p><span class="math">\[\begin{bmatrix}
+1 &amp; 0 &amp; 12\\
+0  &amp; 1 &amp; -7\\
+\end{bmatrix}\]</span></p>
+
+<p>So: <span class="math">\(x_1=12\)</span>, <span class="math">\(x_2=-7\)</span>.</p>
+
+<p><strong>6.</strong></p>
+
+<p><span class="math">\[\begin{bmatrix}
+1 &amp; -6 &amp; 4 &amp; 0 &amp; -1\\
+0 &amp; 2 &amp; -7 &amp; 0 &amp; 4\\
+0 &amp; 0 &amp; 1 &amp; 2 &amp; -3\\
+0 &amp; 0 &amp; 3 &amp; 1 &amp; 6
+\end{bmatrix}\]</span></p>
+
+<p>First to get all zeros below the main diagonal we need to eliminate the 3 in the bottom row. </p>
+
+<p><span class="math">\(-3 \cdot R3 + R4 \rightarrow R4\)</span>:</p>
+
+<p><span class="math">\[\begin{bmatrix}
+1 &amp; -6 &amp; 4 &amp; 0 &amp; -1\\
+0 &amp; 2 &amp; -7 &amp; 0 &amp; 4\\
+0 &amp; 0 &amp; 1 &amp; 2 &amp; -3\\
+0 &amp; 0 &amp; 0 &amp; -5 &amp; 15
+\end{bmatrix}\]</span></p>
+
+<p>The next main goal is to make all the entries above the main diagonal 0. This would start with eliminating the 2 in the third row. The easiest way to do this is to first change the <span class="math">\(-5\)</span> to a <span class="math">\(1\)</span>. So, the next step is to do that. </p>
+
+<p><span class="math">\(-\frac{1}{5}\cdot R4 \rightarrow R4\)</span>:</p>
+
+<p><span class="math">\[\begin{bmatrix}
+1 &amp; -6 &amp; 4 &amp; 0 &amp; -1\\
+0 &amp; 2 &amp; -7 &amp; 0 &amp; 4\\
+0 &amp; 0 &amp; 1 &amp; 2 &amp; -3\\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -3
+\end{bmatrix}\]</span></p>
+
+<p>(The third step would be to eliminate the 2 with <span class="math">\(-2 \cdot R4 + R3 \rightarrow R3\)</span>.)</p>
+
+<p>This is the way humans do this process. Computers do it a little differently in order to minimize round off error.</p>
+
+<p><strong>9.</strong> </p>
+
+<p><span class="math">\[\begin{bmatrix}
+1 &amp; -1 &amp;0 &amp; 0 &amp; -4\\
+0 &amp; 1 &amp; -3 &amp; 0 &amp;-7\\
+0 &amp; 0 &amp; 1 &amp;-3 &amp; -1\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 4
+\end{bmatrix}\]</span></p>
+
+<p>No further steps are needed. The bottom row means: <span class="math">\[0x_1+0x_2+0x_3+0x_4=4.\]</span> That is, that <span class="math">\(0=4\)</span>. This is impossible, so there are no solutions. The system is <strong>inconsistent</strong>.</p>
+
+<p><strong>11.</strong> and <strong>15.</strong></p>
+
+<p><span class="math">\[\begin{bmatrix}
+0&amp; 1 &amp; 4 &amp; -4\\
+1 &amp; 3 &amp; 3 &amp; -2\\
+3 &amp; 7 &amp; 5 &amp; 6
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\(R1 \leftrightarrow R2\)</span>:</p>
+
+<p><span class="math">\[\begin{bmatrix}
+ 1 &amp; 3 &amp; 3 &amp; -2\\
+0&amp; 1 &amp; 4 &amp; -4\\
+3 &amp; 7 &amp; 5 &amp; 6
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\(-3\cdot R1 + R3 \rightarrow R3\)</span>:</p>
+
+<p><span class="math">\[\begin{bmatrix}
+ 1 &amp; 3 &amp; 3 &amp; -2\\
+0&amp; 1 &amp; 4 &amp; -4\\
+0 &amp; -2 &amp; -4 &amp; 12
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\(2\cdot R2 +R3 \rightarrow R3\)</span>:</p>
+
+<p><span class="math">\[\begin{bmatrix}
+ 1 &amp; 3 &amp; 3 &amp; -2\\
+0&amp; 1 &amp; 4 &amp; -4\\
+0 &amp; 0 &amp; 4 &amp; 4
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\(\frac{1}{4}\cdot R3 \rightarrow R3\)</span>:</p>
+
+<p><span class="math">\[\begin{bmatrix}
+ 1 &amp; 3 &amp; 3 &amp; -2\\
+0&amp; 1 &amp; 4 &amp; -4\\
+0 &amp; 0 &amp; 1 &amp; 1
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\(-4\cdot R3 + R2 \rightarrow R2\)</span>:</p>
+
+<p>and</p>
+
+<p><span class="math">\(-3 \cdot R3 + R1 \rightarrow R1\)</span>:</p>
+
+<p><span class="math">\[\begin{bmatrix}
+ 1 &amp; 3 &amp; 0 &amp; -5\\
+0&amp; 1 &amp; 0 &amp; -8\\
+0 &amp; 0 &amp; 1 &amp; 1
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\(-3 \cdot R2 + R1 \rightarrow R1\)</span></p>
+
+<p><span class="math">\[\begin{bmatrix}
+ 1 &amp; 0 &amp; 0 &amp; 19\\
+0&amp; 1 &amp; 0 &amp; -8\\
+0 &amp; 0 &amp; 1 &amp; 1
+\end{bmatrix}\]</span></p>
+
+<p>So: <span class="math">\[\begin{align*}
+x_1&amp;=19\\
+x_2&amp;=-8\\
+x_3&amp;=1\\
+\end{align*}\]</span></p>
+
+<p>To verify this is in fact a solution we need to check each equation:</p>
+
+<p><span class="math">\[-8+4\cdot 1 = -4 \ \ \checkmark\]</span></p>
+
+<p><span class="math">\[19+3 \cdot -8 +3\cdot 1 = -2 \ \ \checkmark\]</span></p>
+
+<p><span class="math">\[3 \cdot 19 +7 \cdot -8 +5 \cdot 1=6\ \ \checkmark\]</span></p>
+
+<p><strong>14.</strong> and <strong>18.</strong></p>
+
+<p><span class="math">\[\begin{bmatrix}
+1&amp; -3 &amp; 0 &amp; 5\\
+-1 &amp; 1 &amp; 5 &amp;2\\
+0 &amp; 1 &amp; 1 &amp; 0
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\[\begin{bmatrix}
+1&amp; -3 &amp; 0 &amp; 5\\
+0 &amp; -2 &amp; 5 &amp;7\\
+0 &amp; 1 &amp; 1 &amp; 0
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\[\begin{bmatrix}
+1&amp; -3 &amp; 0 &amp; 5\\
+0 &amp; 1 &amp; 1 &amp; 0 \\
+0 &amp; -2 &amp; 5 &amp;7
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\[\begin{bmatrix}
+1&amp; -3 &amp; 0 &amp; 5\\
+0 &amp; 1 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 7 &amp;7
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\[\begin{bmatrix}
+1&amp; -3 &amp; 0 &amp; 5\\
+0 &amp; 1 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp;1
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\[\begin{bmatrix}
+1&amp; -3 &amp; 0 &amp; 5\\
+0 &amp; 1 &amp; 0 &amp; -1 \\
+0 &amp; 0 &amp; 1 &amp;1
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\[\begin{bmatrix}
+1&amp; 0 &amp; 0 &amp; 2\\
+0 &amp; 1 &amp; 0 &amp; -1 \\
+0 &amp; 0 &amp; 1 &amp;1
+\end{bmatrix}\]</span></p>
+
+<p>So the solution is <span class="math">\((2, -1, 1)\)</span>. </p>
+
+<p>To verify, substitute <span class="math">\(x_1=2\)</span>, <span class="math">\(x_2=-1\)</span> and <span class="math">\(x_3=1\)</span> into each of the original equation and check that they are satisfied.</p>
+
+<p><strong>29.</strong> False. A <span class="math">\(5 \times 6\)</span> matrix has 5 rows and 6 columns.</p>
+
+<p><strong>30.</strong> False. Two matrices are row equivalent is the systems they represent have the same solution set. In terms of elementary row operations, two matrices are row equivalent if you can get from one to the other via elementary row operation.</p>
+
+<p><strong>32.</strong> False. An inconsistent system has no solution.</p>
+
+<p><strong>43.</strong> There are 4 nodes, each gives on equation. The equation in the problem statement correspond to node 1.</p>
+
+<p>The second node gives:</p>
+
+<p><span class="math">\[\begin{align*}
+T_2&amp;=\frac{T_1+20+40+T_3}{4}\\
+-T_1+4T_2-T_3&amp;=60
+\end{align*}\]</span></p>
+
+<p>The third node gives:</p>
+
+<p><span class="math">\[\begin{align*}
+T_3&amp;=\frac{T_2+40+30+T_4}{4}\\
+-T_2+4T_3-T_4&amp;=70
+\end{align*}\]</span></p>
+
+<p>And the fourth node:</p>
+
+<p><span class="math">\[\begin{align*}
+T_4&amp;=\frac{T_1+T_3+30+10}{4}\\
+-T_1-T_3+4T_4&amp;=40
+\end{align*}\]</span></p>
+
+<p><strong>44.</strong></p>
+
+<p><span class="math">\[\begin{bmatrix}
+4 &amp;-1 &amp; 0 &amp;-1 &amp;30\\
+-1 &amp; 4 &amp;-1&amp;0&amp; 60\\
+0 &amp; -1 &amp; 4 &amp;-1 &amp; 70\\
+-1 &amp; 0 &amp;-1 &amp; 4 &amp; 40
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\[\begin{bmatrix}
+-1 &amp; 0 &amp;-1 &amp; 4 &amp; 40\\
+-1 &amp; 4 &amp;-1&amp;0&amp; 60\\
+0 &amp; -1 &amp; 4 &amp;-1 &amp; 70\\
+4 &amp;-1 &amp; 0 &amp;-1 &amp;30\\
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\[\begin{bmatrix}
+1 &amp; 0 &amp;1 &amp; -4 &amp; -40\\
+-1 &amp; 4 &amp;-1&amp;0&amp; 60\\
+0 &amp; -1 &amp; 4 &amp;-1 &amp; 70\\
+4 &amp;-1 &amp; 0 &amp;-1 &amp;30\\
+\end{bmatrix}\]</span></p>
+
+<p>Use row 1 to eliminate the <span class="math">\(-1\)</span> and <span class="math">\(4\)</span> in rows 2 and 4:</p>
+
+<p><span class="math">\[\begin{bmatrix}
+1 &amp; 0 &amp;1 &amp; -4 &amp; -40\\
+0 &amp; 4 &amp;0&amp;-4&amp; 20\\
+0 &amp; -1 &amp; 4 &amp;-1 &amp; 70\\
+0 &amp;-1 &amp; -4 &amp;15 &amp;190\\
+\end{bmatrix}\]</span></p>
+
+<p>All the entries in row 2 are divisible by 4, so we’ll do that. If they weren’t, I’d move row 2 to the bottom instead.</p>
+
+<p><span class="math">\[\begin{bmatrix}
+1 &amp; 0 &amp;1 &amp; -4 &amp; -40\\
+0 &amp; 1 &amp;0&amp;-1&amp; 5\\
+0 &amp; -1 &amp; 4 &amp;-1 &amp; 70\\
+0 &amp;-1 &amp; -4 &amp;15 &amp;190\\
+\end{bmatrix}\]</span></p>
+
+<p>Use row two to eliminate the two <span class="math">\(-1\)</span> entries below the <span class="math">\(1\)</span> in row 2:</p>
+
+<p><span class="math">\[\begin{bmatrix}
+1 &amp; 0 &amp;1 &amp; -4 &amp; -40\\
+0 &amp; 1 &amp;0&amp;-1&amp; 5\\
+0 &amp; 0 &amp; 4 &amp;-2 &amp; 75\\
+0 &amp;0 &amp; -4 &amp;14 &amp;195\\
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\[\begin{bmatrix}
+1 &amp; 0 &amp;1 &amp; -4 &amp; -40\\
+0 &amp; 1 &amp;0&amp;-1&amp; 5\\
+0 &amp; 0 &amp; 4 &amp;-2 &amp; 75\\
+0 &amp;0 &amp; 0 &amp;12 &amp;270\\
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\[\begin{bmatrix}
+1 &amp; 0 &amp;1 &amp; -4 &amp; -40\\
+0 &amp; 1 &amp;0&amp;-1&amp; 5\\
+0 &amp; 0 &amp; 4 &amp;-2 &amp; 75\\
+0 &amp;0 &amp; 0 &amp;1 &amp; \frac{270}{12} \\
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\[\begin{bmatrix}
+1 &amp; 0 &amp;1 &amp; -4 &amp; -40\\
+0 &amp; 1 &amp;0&amp;-1&amp; 5\\
+0 &amp; 0 &amp; 4 &amp;-2 &amp; 75\\
+0 &amp;0 &amp; 0 &amp;1 &amp; \frac{45}{2} \\
+\end{bmatrix}\]</span></p>
+
+<p>Next eliminate the <span class="math">\(-2\)</span>, <span class="math">\(-1\)</span> and <span class="math">\(-4\)</span> above the <span class="math">\(1\)</span> in the bottom row:</p>
+
+<p><span class="math">\[\begin{bmatrix}
+1 &amp; 0 &amp;1 &amp; 0 &amp; 50\\
+0 &amp; 1 &amp;0&amp;0 &amp; \frac{55}{2}\\
+0 &amp; 0 &amp; 4 &amp; 0 &amp; 120\\
+0 &amp;0 &amp; 0 &amp;1 &amp; \frac{45}{2} \\
+\end{bmatrix}\]</span></p>
+
+<p><span class="math">\[\begin{bmatrix}
+1 &amp; 0 &amp;1 &amp; 0 &amp; 50\\
+0 &amp; 1 &amp;0&amp;0 &amp; \frac{55}{2}\\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 30\\
+0 &amp;0 &amp; 0 &amp;1 &amp; \frac{45}{2} \\
+\end{bmatrix}\]</span></p>
+
+<p>Finally, eliminate the <span class="math">\(1\)</span> in the top row (the one that isn’t on the diagonal):</p>
+
+<p><span class="math">\[\begin{bmatrix}
+1 &amp; 0 &amp;0  &amp; 0 &amp; 20\\
+0 &amp; 1 &amp;0&amp;0 &amp; \frac{55}{2}\\
+0 &amp; 0 &amp; 4 &amp; 0 &amp; 120\\
+0 &amp;0 &amp; 0 &amp;1 &amp; \frac{45}{2} \\
+\end{bmatrix}\]</span></p>
+
+<p>The solution is <span class="math">\[(T_1, T_2, T_3, T_4)=\left(20, \frac{55}{2}, 30, \frac{45}{2}\right).\]</span></p>
+</body>
+</html>
