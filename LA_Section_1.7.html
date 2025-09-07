@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LA_Section_1.7</title>
+</head>
+<body>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<p>LA_Section_1.7</p>
+
+<p><strong>2.</strong></p>
+
+<p>Put the vector in as columns of a matrix, <span class="math">\(A\)</span>. If <span class="math">\(A{\bf x} ={\bf 0}\)</span> has <strong>only</strong> the trivial solution, the vectors are linearly independent.</p>
+
+<p><span class="math">\(\begin{bmatrix} 0 &amp; 0 &amp; -3\\
+0 &amp; 5 &amp; 4\\
+2 &amp; -8 &amp; 1\end{bmatrix}\)</span> reduces to </p>
+
+<p><span class="math">\(\begin{bmatrix} 2 &amp; -8&amp; 1\\
+0 &amp; 5 &amp; 4\\
+0 &amp; 0 &amp;-3\end{bmatrix}\)</span></p>
+
+<p>which has no free variables. Hence the three vectors are linearly independent.</p>
+
+<hr />
+
+<p><strong>6.</strong></p>
+
+<p>The matrix reduces to </p>
+
+<p><span class="math">\(\begin{bmatrix}
+1&amp;0&amp;3\\
+0 &amp; -1 &amp; 4\\
+0 &amp; 0 &amp;7 \\
+0 &amp; 0 &amp; 0
+\end{bmatrix}\)</span></p>
+
+<p>(It isn’t in reduced echelon form, so your’s might be different.)</p>
+
+<p>There are no free variables so <span class="math">\(A {\bf x}={\bf 0}\)</span> has only the trivial solution. Hence, the three vectors are linearly independent.</p>
+
+<hr />
+
+<p><strong>8.</strong></p>
+
+<p>The matrix <strong>must</strong> have at least one free variable. Hence there is a non-trivial solution; the vectors are not linearly independent.</p>
+
+<hr />
+
+<p><strong>10.</strong></p>
+
+<p><span class="math">\({\bf v_3} \in \text{Span} \{{\bf v_2}, {\bf v_1}  \}\)</span></p>
+
+<p>If <span class="math">\(x_1 {\bf v_1} + x_2 {\bf v_2}={\bf v_3}\)</span> has a solution. To solve, consider
+<span class="math">\(\begin{bmatrix}
+1 &amp; -2 &amp; 2\\
+-5 &amp; 10 &amp; -10\\
+-3 &amp; 6 &amp; h
+\end{bmatrix}\)</span></p>
+
+<p>as an <strong>augmented</strong> matrix.</p>
+
+<p>Reduce:</p>
+
+<p><span class="math">\(\begin{bmatrix}
+1 &amp; -2 &amp; 2\\
+-5 &amp; 10 &amp; -10\\
+-3 &amp; 6 &amp; h
+\end{bmatrix}\)</span></p>
+
+<p><span class="math">\(\begin{bmatrix}
+1 &amp; -2 &amp; 2\\
+0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; h+6
+\end{bmatrix}\)</span></p>
+
+<p><span class="math">\(\begin{bmatrix}
+1 &amp; -2 &amp; 2\\
+0 &amp; 0 &amp; h+6\\
+0 &amp; 0 &amp; 0\\
+\end{bmatrix}\)</span></p>
+
+<p>This system is consistent only if <span class="math">\(h=-6\)</span>. So, <span class="math">\({\bf v_3} \in \text{Span} \{{\bf v_2}, {\bf v_1}  \}\)</span> if <span class="math">\(h=-6\)</span>.</p>
+
+<p>To determine if the three vectors are linearly independent consider the matrix </p>
+
+<p><span class="math">\(\begin{bmatrix}
+1 &amp; -2 &amp; 2\\
+-5 &amp; 10 &amp; -10\\
+-3 &amp; 6 &amp; h
+\end{bmatrix}\)</span></p>
+
+<p>as the matrix <span class="math">\(A\)</span> in the equation <span class="math">\(A {\bf x}={\bf 0}\)</span></p>
+
+<p>Regardless of the value of <span class="math">\(h\)</span> the matrix <span class="math">\(A\)</span> has at least one free variable. (<span class="math">\(A\)</span> has two free variables if <span class="math">\(h=-6\)</span>.)</p>
+
+<p>So, the three vectors are linearly independent for <strong>all</strong> values of <span class="math">\(h\)</span>.</p>
+
+<hr />
+
+<p><strong>14.</strong></p>
+
+<p>Put the vectors as columns in a matrix <span class="math">\(A\)</span> and reduce. The reduced matrix is:</p>
+
+<p><span class="math">\(\begin{bmatrix}
+1 &amp; -5 &amp; 1\\
+0 &amp; 1 &amp; 1\\
+0 &amp; 0 &amp; h-26
+\end{bmatrix}\)</span></p>
+
+<p>which has a free variable if <span class="math">\(h=26\)</span>. Thus the vectors are linearly dependent if <span class="math">\(h=26\)</span>. The vectors are linearly independent if <span class="math">\(h \neq 26\)</span>.</p>
+
+<hr />
+
+<p><strong>16.</strong></p>
+
+<p>The second vector is <span class="math">\(\frac{3}{2}\)</span> times the first vector. Thus:</p>
+
+<p><span class="math">\(\frac{3}{2}{\bf v_1}={\bf v_2}\)</span></p>
+
+<p>or</p>
+
+<p><span class="math">\(\frac{3}{2}{\bf v_1}-{\bf v_2}={\bf 0}\)</span></p>
+
+<p>That is, the two vectors are linearly dependent.</p>
+
+<hr />
+
+<p><strong>18.</strong></p>
+
+<p>If you put the 4 vectors as column in a matrix <span class="math">\(A\)</span> and reduce, you’ll find at least 2 free variables. Thus <span class="math">\(A {\bf x}={\bf 0}\)</span> has non-trivial solutions and the set of vectors is linearly dependent. Notice there are more vectors than there are entries in each vector.</p>
+
+<hr />
+
+<p><strong>20.</strong></p>
+
+<p>This set is linearly dependent. Any set that contains the zero vector is linearly dependent.</p>
+
+<hr />
+
+<p><strong>21.</strong></p>
+
+<p>False. <span class="math">\(A{\bf x}={\bf 0}\)</span> <strong>always</strong> has the trivial solution. The question is whether it has <strong>only</strong> the trivial solution.</p>
+
+<hr />
+
+<p><strong>24.</strong></p>
+
+<p>False. See question 16 for a counter example to this statement.</p>
+
+<hr />
+
+<p><strong>25.</strong></p>
+
+<p>True. There will be at least one free variable.</p>
+
+<hr />
+
+<p><strong>33.</strong></p>
+
+<p>Five. Any fewer and there would be a free variable and the vectors would be linearly dependent.</p>
+</body>
+</html>
