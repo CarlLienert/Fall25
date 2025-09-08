@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LA_Section_1.8</title>
+</head>
+<body>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<p>LA_Section_1.8</p>
+
+<p><strong>2.</strong></p>
+
+<p><span class="math">\(T({\bf u})=\begin{bmatrix} .5 &amp; 0 &amp; 0\\
+0 &amp; .5 &amp; 0\\
+0 &amp; 0 &amp; .5
+\end{bmatrix}\begin{bmatrix}1\\0\\-4\end{bmatrix}=\begin{bmatrix}.5\\0\\-2\end{bmatrix}\)</span></p>
+
+<p>Similarly,</p>
+
+<p><span class="math">\(T({\bf v})=\begin{bmatrix} .5 &amp; 0 &amp; 0\\
+0 &amp; .5 &amp; 0\\
+0 &amp; 0 &amp; .5
+\end{bmatrix}\begin{bmatrix}a\\b\\c\end{bmatrix}=\begin{bmatrix}.5a\\.5b\\.5c\end{bmatrix}\)</span></p>
+
+<hr />
+
+<p><strong>6.</strong></p>
+
+<p>Use the augmented matrix:</p>
+
+<p><span class="math">\(\begin{bmatrix}
+1 &amp; -2 &amp; 1 &amp; 1\\
+3 &amp; -4 &amp; 5 &amp; 9\\
+0 &amp; 1 &amp; 1 &amp; 3\\
+-3 &amp; 5 &amp; -4 &amp; -6
+\end{bmatrix}\)</span></p>
+
+<p>which reduces to:</p>
+
+<p><span class="math">\(\begin{bmatrix}
+1 &amp; 0 &amp; 3 &amp; 7\\
+0 &amp; 1 &amp; 1 &amp; 3\\
+0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0\\
+\end{bmatrix}\)</span></p>
+
+<p>The variable <span class="math">\(x_3\)</span> is free. The reduced matrix gives:</p>
+
+<p><span class="math">\(x_1+3x_3=7\)</span> and
+<span class="math">\(x_2+x_3=3\)</span></p>
+
+<p>The general solution is then:</p>
+
+<p><span class="math">\({\bf x}=\begin{bmatrix}7-3x_3\\3-x_3\\x_3\end{bmatrix}\)</span>.</p>
+
+<p>The question asks for <em>one</em> solution, so pick a value for <span class="math">\(x_3\)</span>. I’ll pick <span class="math">\(x_3=0\)</span> and <span class="math">\(\begin{bmatrix}7\\3\\0\end{bmatrix}\)</span> is a solution.</p>
+
+<hr />
+
+<p><strong>8.</strong></p>
+
+<p>To map <em>from</em> <span class="math">\(\mathbb{R}^4\)</span> the matrix <span class="math">\(A\)</span> needs to have 4 columns. To map <em>to</em> <span class="math">\(\mathbb{R}^5\)</span> the matrix <span class="math">\(A\)</span> needs to have 5 rows. So, <span class="math">\(A\)</span> is <span class="math">\(5 \times 4.\)</span></p>
+
+<hr />
+
+<p><strong>10.</strong></p>
+
+<p>This is the same as solving the homogeneous equation <span class="math">\(A{\bf x}={\bf 0}\)</span>. So, reduce <span class="math">\(A\)</span> to get:</p>
+
+<p><span class="math">\(\begin{bmatrix}
+1 &amp; 0 &amp; 3 &amp; 0\\
+0 &amp; 1 &amp; 2 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp;1\\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}\)</span></p>
+
+<p>The variable <span class="math">\(x_3\)</span> is free. The general solution is:</p>
+
+<p><span class="math">\({\bf x}=\begin{bmatrix}-3x_3\\-2x_3\\x_3\\0\end{bmatrix}=x_3\begin{bmatrix}-3\\-2\\1\\0\end{bmatrix}\)</span></p>
+
+<p>So the solution set is the “line” through the vector <span class="math">\(\begin{bmatrix}-3\\-2\\1\\0\end{bmatrix}\)</span>.</p>
+
+<hr />
+
+<p><strong>12.</strong></p>
+
+<p>We need to consider the augmented matrix rather than the coefficient matrix we used in question 10. Keep in mind, that as you perform row operations they change the values from <span class="math">\({\bf b}\)</span>. (It doesn’t work to append <span class="math">\({\bf b}\)</span> to the reduction from question 10.)</p>
+
+<p>Start with: </p>
+
+<p><span class="math">\(\begin{bmatrix}
+1 &amp; 3 &amp; 9 &amp; 2 &amp; -1\\
+1 &amp; 0 &amp; 3 &amp; -4 &amp; 3\\
+0 &amp; 1 &amp;  2 &amp; 3 &amp; -1\\
+-2 &amp; 3 &amp; 0 &amp; 5 &amp; 4
+\end{bmatrix}\)</span> and reduce to obtain:</p>
+
+<p><span class="math">\(\begin{bmatrix}
+1 &amp; 3 &amp; 9 &amp; 2 &amp; -1\\
+0 &amp; 1 &amp; 2 &amp; 3 &amp; -1\\
+0 &amp; 0 &amp; 0 &amp; 3 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 17
+\end{bmatrix}.\)</span></p>
+
+<p>(Since it isn’t reduced row echelon form, yours may be a little different.)</p>
+
+<p>Remember this is the <em>augmented</em> matrix, so the bottom row says <span class="math">\(0=17\)</span> which is not true. Hence the system is inconsistent and <span class="math">\({\bf b}\)</span> is not in the range of the linear transformation.</p>
+
+<hr />
+
+<p><strong>14.</strong></p>
+
+<figure>
+<img src="LA_1_8_14.png" alt="" />
+</figure>
+
+<p>The transformation contracts each vector by a factor of 0.5.</p>
+
+<hr />
+
+<p><strong>16.</strong></p>
+
+<p>For example <span class="math">\(T({\bf u})=\begin{bmatrix}2\\5\end{bmatrix}\)</span></p>
+
+<figure>
+<img src="LA_1_8_16.png" alt="" />
+</figure>
+
+<p>The transformation is a reflection over the line <span class="math">\(y=x\)</span>.</p>
+
+<hr />
+
+<p><strong>17.</strong></p>
+
+<p><span class="math">\(T(3{\bf u})=3T({\bf u})=\begin{bmatrix}6\\3\end{bmatrix}\)</span></p>
+
+<p><span class="math">\(T(2{\bf v})=2T({\bf v})=\begin{bmatrix}-2\\6\end{bmatrix}\)</span></p>
+
+<p>and</p>
+
+<p><span class="math">\(T(3{\bf u}+2{\bf v})=3T({\bf u})+2T({\bf v})=\begin{bmatrix}-2\\6\end{bmatrix}=\begin{bmatrix}6 \\3 \end{bmatrix}+\begin{bmatrix}-2\\6\end{bmatrix}=\begin{bmatrix}4\\9\end{bmatrix}\)</span></p>
+
+<hr />
+
+<p><strong>19.</strong></p>
+
+<p>This is an important example.</p>
+
+<p><span class="math">\(\begin{bmatrix}5\\-3\end{bmatrix}=5{\bf e_1}-3{\bf e_2}\)</span></p>
+
+<p>so</p>
+
+<p><span class="math">\(T\left( \begin{bmatrix}5\\-3\end{bmatrix}\right)=5T({\bf e_1})-3T({\bf e_2})=\begin{bmatrix}10\\25\end{bmatrix}+\begin{bmatrix}3\\-18\end{bmatrix}=\begin{bmatrix}13\\7\end{bmatrix}\)</span></p>
+
+<p>Similarly </p>
+
+<p><span class="math">\(T\left( \begin{bmatrix}x_1\\x_2\end{bmatrix}\right)=x_1T({\bf e_1})+x_2T({\bf e_2})=\begin{bmatrix}2x_1\\5x_1\end{bmatrix}+\begin{bmatrix}-x_2\\6x_2\end{bmatrix}=\begin{bmatrix}2x_1-x_2\\5x_1+6x_2\end{bmatrix}\)</span></p>
+
+<hr />
+
+<p><strong>20.</strong></p>
+
+<p><span class="math">\(\begin{bmatrix}-2&amp;7\\5&amp; -3
+\end{bmatrix}\)</span></p>
+
+<p>The two vectors <span class="math">\({\bf v_1}\)</span> and <span class="math">\({\bf v_2}\)</span> are the columns in the matrix <span class="math">\(A\)</span>. Think about this as a linear combination of the vectors.</p>
+
+<hr />
+
+<p><strong>23.</strong></p>
+
+<p>False. The domain is <span class="math">\(\mathbb{R}^5\)</span>.</p>
+
+<hr />
+
+<p><strong>25.</strong></p>
+
+<p>False. The range is set of images of the transformation. These vectors are in <span class="math">\(\mathbb{R}^m\)</span> but the range is not necessarily <strong>all</strong> of <span class="math">\(\mathbb{R}^m\)</span>.</p>
+
+<hr />
+
+<p><strong>26.</strong></p>
+
+<p>False. This is an existence question rather than a uniqueness question.</p>
+
+<hr />
+
+<p><strong>32.</strong></p>
+
+<p>Since <span class="math">\({\bf v_1}, {\bf v_2}, \dots, {\bf v_p}\)</span> span <span class="math">\(\mathbb{R}^n\)</span>, <span class="math">\({\bf x}\)</span> is a linear combination of the vectors:
+<span class="math">\[{\bf{x}}=x_1{\bf v_1}+x_2{\bf v_2}+\dots x_p{\bf v_p}\]</span></p>
+
+<p>for some values of <span class="math">\(x_1, x_2, \dots, x_p\)</span>.</p>
+
+<p>Then</p>
+
+<p><span class="math">\[T({\bf{x}})=x_1T({\bf v_1})+x_2T({\bf v_2})+\dots x_pT({\bf v_p})={\bf 0}\]</span></p>
+
+<p>Since <span class="math">\(T({\bf v_i})={\bf 0}\)</span> for each of the vectors <span class="math">\({\bf v_1}, {\bf v_2}, \dots, {\bf v_p}\)</span>.</p>
+
+<hr />
+
+<p><strong>38.</strong></p>
+
+<p>Consider the image of the sum of two vectors <span class="math">\({\bf u}\)</span> and <span class="math">\({\bf v}\)</span>:</p>
+
+<p><span class="math">\[T({\bf u}+{\bf v})=A({\bf u}+{\bf v})+{\bf b}=A{\bf u} +A{\bf v}+{\bf b}\]</span></p>
+
+<p>but</p>
+
+<p><span class="math">\[T({\bf u})+T({\bf v})=A{\bf u} +A{\bf v}\]</span></p>
+
+<p>so</p>
+
+<p><span class="math">\(T({\bf u}+{\bf v})= T({\bf u})+T({\bf v})\)</span> only if <span class="math">\({\bf b}={\bf 0}\)</span>.</p>
+</body>
+</html>
