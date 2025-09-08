@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LA_Section_1.9</title>
+</head>
+<body>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<p>LA_Section_1.9</p>
+
+<p><strong>2.</strong> </p>
+
+<p><span class="math">\(\begin{bmatrix}
+1 &amp; 4 &amp; -5\\
+3 &amp; 2 &amp; 4
+\end{bmatrix}\)</span></p>
+
+<p>The images of the columns of the identity matrix are the columns in the transformation matrix.</p>
+
+<hr />
+
+<p><strong>4.</strong></p>
+
+<p>Sketch a picture and follow the points <span class="math">\((0,1)\)</span> and <span class="math">\((1,0)\)</span> on the unit circle.</p>
+
+<p><span class="math">\(\begin{bmatrix}
+\frac{1}{\sqrt{2}}
+ &amp; \frac{1}{\sqrt{2}}\\
+ -\frac{1}{\sqrt{2}} &amp; \frac{1}{\sqrt{2}}\end{bmatrix}\)</span></p>
+
+<hr />
+
+<p><strong>6.</strong></p>
+
+<p><span class="math">\({\bf e_2}+3{\bf e_1}=\begin{bmatrix}3\\1\end{bmatrix}\)</span></p>
+
+<p>so</p>
+
+<p><span class="math">\(A=\begin{bmatrix}
+ 1 &amp; 3 \\
+ 0 &amp; 1
+ \end{bmatrix}\)</span></p>
+
+<hr />
+
+<p><strong>8.</strong></p>
+
+<p>Sketch a picture to see that:</p>
+
+<p><span class="math">\(T({\bf e_1})={\bf e_2}\)</span></p>
+
+<p><span class="math">\(T({\bf e_2})=-{\bf e_1}\)</span></p>
+
+<p><span class="math">\(\begin{bmatrix}
+0 &amp; -1\\
+1 &amp;0
+\end{bmatrix}\)</span></p>
+
+<hr />
+
+<p><strong>12.</strong></p>
+
+<p>The rotation matrix through an angle <span class="math">\(\varphi\)</span> is <span class="math">\(\begin{bmatrix} \cos \varphi &amp; -\sin \varphi\\
+\sin \varphi &amp; \cos \varphi
+\end{bmatrix}\)</span>.</p>
+
+<p>The matrix in question 8 is the rotation matrix with <span class="math">\(\varphi =\frac{\pi}{2}\)</span>. </p>
+
+<hr />
+
+<p><strong>17.</strong> </p>
+
+<p>This is a transformation <span class="math">\(\mathbb{R}^4 \rightarrow \mathbb{R}^4\)</span>:</p>
+
+<p><span class="math">\(T: \begin{bmatrix}x_1\\x_2\\x_3\\
+x_4
+\end{bmatrix}\rightarrow \begin{bmatrix}0\\x_1+x_2\\x_2+x_3\\x_3+x_4\end{bmatrix}=x_1\begin{bmatrix}0\\1\\0\\0\end{bmatrix}+ x_2\begin{bmatrix}0\\1\\1\\0\end{bmatrix}+ x_3\begin{bmatrix}0\\0\\1\\1\end{bmatrix}+ x_1\begin{bmatrix}0\\0\\0\\1\end{bmatrix}=\begin{bmatrix}0&amp;0&amp;0&amp;0\\
+1&amp;1&amp;0&amp;0\\
+0&amp;1 &amp;1&amp;0\\
+0&amp;0&amp;1&amp;1\end{bmatrix}\begin{bmatrix}x_1\\x_2\\x_3\\x_4\end{bmatrix}\)</span></p>
+
+<p>So <span class="math">\(A= \begin{bmatrix}0&amp;0&amp;0&amp;0\\
+1&amp;1&amp;0&amp;0\\
+0&amp;1 &amp;1&amp;0\\
+0&amp;0&amp;1&amp;1\end{bmatrix}\)</span></p>
+
+<hr />
+
+<p><strong>18.</strong></p>
+
+<p>This is a transformation <span class="math">\(\mathbb{R}^2 \rightarrow \mathbb{R}^4\)</span>. The desired matrix <span class="math">\(A\)</span> is <span class="math">\(4 \times 2\)</span>.</p>
+
+<p><span class="math">\(\begin{bmatrix}x_1\\x_2\end{bmatrix}\rightarrow \begin{bmatrix}2x_2-3x_1\\x_1-4x_2\\0\\x_2\end{bmatrix}\)</span></p>
+
+<p>The matrix <span class="math">\(A\)</span> is:</p>
+
+<p><span class="math">\(A=\begin{bmatrix}-3&amp;2\\
+1&amp;-4\\
+0&amp;0\\
+0&amp;1\end{bmatrix}\)</span></p>
+
+<hr />
+
+<p><strong>22.</strong></p>
+
+<p><span class="math">\(A=\begin{bmatrix}1&amp;-2\\
+-1&amp;3\\
+3&amp;-2\end{bmatrix}\)</span></p>
+
+<p>We need to solve <span class="math">\(A{\bf x}=\begin{bmatrix}-1\\4\\9\end{bmatrix}\)</span>. Use the augmented matrix:</p>
+
+<p><span class="math">\(\begin{bmatrix}1&amp;-2&amp;-1\\
+-1&amp;3&amp;4\\
+3&amp;-2&amp;9\end{bmatrix}\)</span></p>
+
+<p>which reduces to </p>
+
+<p><span class="math">\(\begin{bmatrix}1&amp;0&amp;5\\
+0&amp;1&amp;3\\
+0&amp;0&amp;0\end{bmatrix}\)</span></p>
+
+<p>and gives <span class="math">\(x_1=5\)</span>, <span class="math">\(x_2=3\)</span>. (Remember it is an augmented matrix.)</p>
+
+<hr />
+
+<p><strong>24.</strong></p>
+
+<p>False. <span class="math">\(T\)</span> is one-to-one if distinct vectors in <span class="math">\(\mathbb{R}^n\)</span> map to distinct vectors in <span class="math">\(\mathbb{R}^m\)</span>. <em>Any</em> well defined function maps each vector in <span class="math">\(\mathbb{R}^n\)</span> to a unique vector in <span class="math">\(\mathbb{R}^m\)</span>.</p>
+
+<hr />
+
+<p><strong>29.</strong></p>
+
+<p>False. As in #24, every vector in <span class="math">\(\mathbb{R}^n\)</span> maps onto a well defined vector in <span class="math">\(\mathbb{R}^m\)</span>.</p>
+
+<hr />
+
+<p><strong>33.</strong></p>
+
+<p><span class="math">\(A{\bf x}={\bf b}\)</span> has a solution for <strong>all</strong> <span class="math">\({\bf b}\)</span> only if <span class="math">\(A\)</span> has a pivot in all rows. </p>
+
+<p>The matrix <span class="math">\(A= \begin{bmatrix}0&amp;0&amp;0&amp;0\\
+1&amp;1&amp;0&amp;0\\
+0&amp;1 &amp;1&amp;0\\
+0&amp;0&amp;1&amp;1\end{bmatrix}\)</span> has pivots in at most 3 rows. So, the transformation <span class="math">\(A \mapsto A{\bf x}\)</span> is not onto.</p>
+
+<p>Similarly, <span class="math">\(A\)</span> has at least one free variable. So <span class="math">\(A{\bf x}={\bf 0}\)</span> has non-trivial solutions and the transformation is not one-to-one.</p>
+
+<hr />
+
+<p><strong>34.</strong></p>
+
+<p><span class="math">\(A=\begin{bmatrix}
+1 &amp; 4 &amp; -5\\
+3 &amp; 2 &amp; 4
+\end{bmatrix}\)</span></p>
+
+<p>has one free variable so the equation <span class="math">\(A{\bf x}={\bf 0}\)</span> has non-trivial solutions and the transformation is not one-to-one.</p>
+
+<p>Reduce <span class="math">\(A\)</span>:</p>
+
+<p><span class="math">\(\begin{bmatrix}1&amp;4&amp;-5\\0&amp;-19&amp;19\end{bmatrix}\)</span>.</p>
+
+<p>There is a pivot in every row, so the transformation is onto.</p>
+</body>
+</html>
