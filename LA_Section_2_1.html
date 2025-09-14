@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LA_Section_2.1</title>
+</head>
+<body>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<p>LA_Section_2.1</p>
+
+<p><strong>2.</strong></p>
+
+<p><span class="math">\[\begin{align*}
+A+2B&amp;=\begin{bmatrix}2&amp;0&amp;-1\\
+4&amp;-3&amp;2\end{bmatrix}+\begin{bmatrix}14&amp;-10&amp;2\\
+2&amp;-8&amp;-6\end{bmatrix}\\
+&amp;=\begin{bmatrix}16&amp;-10&amp;1\\
+6&amp;-11&amp;-4\end{bmatrix}
+\end{align*}\]</span></p>
+
+<p><span class="math">\(3C-E\)</span> is undefined, <span class="math">\(3C\)</span> is <span class="math">\(2 \times 2\)</span> while <span class="math">\(-E\)</span> is <span class="math">\(2 \times 1\)</span>, they cannot be added.</p>
+
+<p><span class="math">\[\begin{align*} CB&amp;=
+\begin{bmatrix}1&amp;2\\-2&amp;1\end{bmatrix}\begin{bmatrix}7&amp;-5&amp;1\\1&amp;-4&amp;-3\end{bmatrix} \\
+&amp;=\begin{bmatrix}1\cdot 7+2\cdot1&amp; 1\cdot -5+2\cdot -4&amp;1\cdot 1+2\cdot -3\\
+-2\cdot 7+1\cdot 1&amp; -2 \cdot -5+1 \cdot -4&amp;-2 \cdot +1\cdot -3\end{bmatrix}\\
+&amp;=\begin{bmatrix}9 &amp; -13 &amp; -5\\
+-13&amp; 6 &amp; -5\end{bmatrix}
+\end{align*}\]</span></p>
+
+<p><span class="math">\(EB\)</span> is not defined. <span class="math">\(E\)</span> is <span class="math">\(2 \times 1\)</span>, <span class="math">\(B\)</span> is <span class="math">\(2 \times 3\)</span>. The “inner” dimensions do not match. </p>
+
+<hr />
+
+<p><strong>4.</strong></p>
+
+<p>Notice that <span class="math">\(A-5I_3\)</span> subtracts 5 along the main diagonal:</p>
+
+<p><span class="math">\(A-4I_3=\begin{bmatrix}4 &amp; -1 &amp; 3\\-8 &amp; 2&amp; -3\\
+-4&amp;1&amp;3\end{bmatrix}\)</span></p>
+
+<p><span class="math">\((5I_3)A\)</span> has the effect of scaling each entry in the matrix <span class="math">\(A\)</span> by 5. Don’t take my word for it, think about why.</p>
+
+<p><span class="math">\((5I_3)A=\begin{bmatrix}45&amp; -5 &amp; 15\\
+-40 &amp; 35 &amp; -15\\
+-20 &amp; 5 &amp;40\end{bmatrix}\)</span></p>
+
+<hr />
+
+<pre><code>* 6.**
+</code></pre>
+
+<p><span class="math">\(AB=\begin{bmatrix}A{\bf b_1}&amp; A{\bf b_2}\end{bmatrix}=\)</span></p>
+
+<p><span class="math">\(A{\bf b_1}=\begin{bmatrix}1\cdot 4 +4 \cdot -2 \\1\cdot-3+4\cdot 0\\1\cdot 3+4\cdot 5\end{bmatrix}=\begin{bmatrix}-4\\-3\\23\end{bmatrix}\)</span></p>
+
+<p>Similarly <span class="math">\(A{\bf b_2}=\begin{bmatrix}14\\-9\\4\end{bmatrix}\)</span></p>
+
+<p>So <span class="math">\(AB\)</span> is the matrix with these two columns.</p>
+
+<p>Using the row-column method:</p>
+
+<p><span class="math">\(AB=\begin{bmatrix}4\cdot 1 +-2 \cdot 4 &amp; 4 \cdot 3 + -2 \cdot -1\\
+-3 \cdot 1 + 0 \cdot 4 &amp; -3 \cdot 3 + 0 \cdot -1\\
+3 \cdot 1 + 5 \cdot 4 &amp; 3 \cdot 3 +5 \cdot -1 \end{bmatrix}\)</span></p>
+
+<p>which gives the same matrix.</p>
+
+<hr />
+
+<p><strong>8.</strong> If <span class="math">\(BC\)</span> is 3 <span class="math">\(3 \times 4\)</span> then <span class="math">\(B\)</span> is <span class="math">\(3\times n\)</span> and <span class="math">\(C\)</span> is <span class="math">\(n \times 4\)</span> where <span class="math">\(n\)</span> can be any integer. So <span class="math">\(B\)</span> has 3 rows.</p>
+
+<hr />
+
+<p><strong>10.</strong> </p>
+
+<p><span class="math">\(AB=\begin{bmatrix}1 &amp; -7\\-2 &amp; 14\end{bmatrix}=AC\)</span></p>
+
+<p>Since <span class="math">\(B \neq C\)</span> this illustrates that “cancelling” does not work for matrices!</p>
+
+<hr />
+
+<p><strong>12.</strong></p>
+
+<p>Notice, we need to find two vectors such that <span class="math">\[A{\bf x}={\bf 0}.\]</span></p>
+
+<p>Let’s reduce <span class="math">\(A\)</span>:</p>
+
+<p><span class="math">\(\begin{bmatrix}3 &amp; -6 \\-1 &amp; 2\end{bmatrix} \sim \begin{bmatrix}1 &amp; -2 \\0 &amp; 0\end{bmatrix}\)</span></p>
+
+<p>So, a solution to <span class="math">\(A {\bf x}={\bf 0}\)</span> is:
+<span class="math">\(x_2\begin{bmatrix}2\\1\end{bmatrix}\)</span></p>
+
+<p>Take two different values for <span class="math">\(x_2\)</span> to obtain the requested matrix <span class="math">\(B\)</span>, for example:</p>
+
+<p><span class="math">\(\begin{bmatrix}2 &amp; 4\\1 &amp; 2\end{bmatrix}\)</span></p>
+
+<hr />
+
+<p><strong>15.</strong></p>
+
+<p>False, this isn’t even defined. <span class="math">\({\bf a_1}{\bf b_1}\)</span> doesn’t have a computational definition. (It’s nonsense.)</p>
+
+<hr />
+
+<p><strong>16.</strong></p>
+
+<p>False. Take away the plus signs and interpret each <span class="math">\(A{\bf b}\)</span> as a column and it’s correct.</p>
+
+<hr />
+
+<p><strong>18.</strong></p>
+
+<p>True. But, it’s probably rare that you’d think about it this way.</p>
+
+<hr />
+
+<p><strong>24.</strong></p>
+
+<p>True. See line b. in Theorem 3. Or better, write down a simple example and follow what happens.</p>
+
+<hr />
+
+<p><strong>28.</strong></p>
+
+<p>The same: all zeros. This follows easily from the column definition of matrix multiplication.</p>
+
+<hr />
+
+<p><strong>30.</strong></p>
+
+<p>If the columns of <span class="math">\(B\)</span> are linearly dependent, then the matrix equation <span class="math">\(B{\bf x}={\bf 0}\)</span> has a non-trivial solution. Call one such non-trivial solution <span class="math">\({\bf \hat{x}}\)</span> (so <span class="math">\({\bf \hat{x}} \neq {\bf 0}\)</span>). Then <span class="math">\[AB{\bf \hat{x}}=A\left( B{\bf \hat{x}}\right)=A{\bf 0}={\bf 0}.\]</span></p>
+
+<p>That is, <span class="math">\({\bf \hat{x}}\)</span> is also a non-trivial solution for the equation <span class="math">\(AB{\bf x}={\bf 0}\)</span> and so the columns of <span class="math">\(AB\)</span> form a linearly independent set.</p>
+
+<hr />
+
+<p><strong>32.</strong></p>
+
+<p>Suppose <span class="math">\(AD=I_m\)</span>. Let <span class="math">\({\bf b} \in \mathbb{R}^m\)</span>. Multiply the matrix identity by <span class="math">\({\bf b}\)</span> on the right:</p>
+
+<p><span class="math">\[AD{\bf b}=I_m {\bf b}={\bf b}\]</span></p>
+
+<p>A solution to <span class="math">\(A{\bf x}={\bf b}\)</span> is <span class="math">\({\bf x}=D{\bf b}.\)</span></p>
+
+<p>The matrix <span class="math">\(A\)</span> has dimension <span class="math">\(m \times n\)</span> for some <span class="math">\(n\)</span>. (<span class="math">\(m\)</span> is the same <span class="math">\(m\)</span> as that of <span class="math">\(I_m\)</span>.) so <span class="math">\({\bf x} \mapsto A{\bf x}\)</span> is onto since <span class="math">\(A{\bf x}={\bf b}\)</span> has a solution for <em>all</em> <span class="math">\(b \in \mathbb{R}^m\)</span>. <span class="math">\(A\)</span> must have a pivot in every row. If <span class="math">\(A\)</span> had more rows than columns this would not be possible.</p>
+
+<hr />
+
+<p><strong>35.</strong></p>
+
+<p><span class="math">\({\bf u}^T{\bf v}=-2a+3b-4c\)</span> (this is the dot or inner product) of <span class="math">\({\bf u}\)</span> and <span class="math">\({\bf v}\)</span></p>
+
+<p><span class="math">\({\bf v}^T {\bf u}\)</span> is the same thing as above. You should write down the vectors to see how they present differently, but give the same result.</p>
+
+<p><span class="math">\({\bf u}{\bf v}^T=\begin{bmatrix}-2\\3\\-4\end{bmatrix}\begin{bmatrix}a &amp; b &amp; c\end{bmatrix}=\begin{bmatrix}-2a &amp; -2b &amp; -2c\\
+3a &amp; 3b &amp; 3c\\
+-4a &amp; -4b &amp; -4c\end{bmatrix}\)</span></p>
+
+<p><span class="math">\({\bf v}{\bf u}^T=\begin{bmatrix}-2a &amp; 3a &amp; -4a\\
+-2b &amp; 3b &amp; -4b\\
+-2c &amp; 3c &amp; -4c\end{bmatrix}\)</span> </p>
+
+<p>Notice <span class="math">\({\bf u}{\bf v}^T\)</span> and <span class="math">\({\bf v}{\bf u}^T\)</span> are NOT the same.</p>
+
+<p>The easiest way to make sure you have the “right” thing is to write the appropriate vectors next to each other and think about the row-column method of computing matrix multiplication.</p>
+
+<p>xx</p>
+</body>
+</html>
