@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LA_Section_2.3</title>
+</head>
+<body>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<p>LA_Section_2.3</p>
+
+<p><strong>2.</strong> <span class="math">\(ad-bc=0\)</span> so this matrix is not invertible.</p>
+
+<hr />
+
+<p><strong>4.</strong></p>
+
+<p>The middle column is all zeros, it cannot have a pivot. This matrix is not invertible.</p>
+
+<p>Perhaps better is that the columns are not linearly independent since one of them is the zero vector.</p>
+
+<hr />
+
+<p><strong>6.</strong> </p>
+
+<p>Do one row operation to clear the <span class="math">\(-3\)</span> in the bottom row:</p>
+
+<p><span class="math">\(\begin{bmatrix}1 &amp; -5 &amp; -4\\
+0 &amp; 3 &amp; 4\\
+0 &amp; -9 &amp; -12\\
+\end{bmatrix}\)</span></p>
+
+<p>Now you can see that the next row reduction will yield a row of zeros: this matrix is not invertible.</p>
+
+<hr />
+
+<p><strong>8.</strong></p>
+
+<p>This <span class="math">\(4 \times 4\)</span> matrix has 4 pivots, it is invertible.</p>
+
+<hr />
+
+<p><strong>12.</strong> </p>
+
+<p>True. This one is tricky. You can cite parts j. and k. in Theorem 8. The reason is: If <span class="math">\(A{\bf x}=0\)</span> then <span class="math">\(AD{\bf x}=c{\bf 0}={\bf 0}\)</span>. But, if <span class="math">\(AD=I\)</span>, then <span class="math">\(I{\bf x}={\bf x}=I{\bf 0}={\bf 0}\)</span>. That is <span class="math">\({\bf x}=0\)</span>. The equation <span class="math">\(A{\bf x}=0\)</span> has only the trivial solution, so the columns of <span class="math">\(A\)</span> are independent and <span class="math">\(A\)</span> is invertible. So, <span class="math">\(C\)</span> must exist.</p>
+
+<hr />
+
+<p><strong>14.</strong></p>
+
+<p>True. If the columns of <span class="math">\(A\)</span> are linearly independent, <span class="math">\(A\)</span> is invertible. The solution to <span class="math">\(A{\bf x}={\bf b}\)</span> is <span class="math">\({\bf x}=A^{-1}{\bf b}\)</span></p>
+
+<hr />
+
+<p><strong>16.</strong></p>
+
+<p>True. In this case the columns of <span class="math">\(A\)</span> span <span class="math">\(\mathbb{R}^n\)</span>. <span class="math">\(A\)</span> is invertible, so the unique solution is <span class="math">\({\bf x}=A^{-1}{\bf b}\)</span>. The key here is the word “each”.</p>
+
+<hr />
+
+<p><strong>18.</strong></p>
+
+<p>False. Notice it says “into,” not “onto.” All such maps map “into” <span class="math">\(\mathbb{R}^n\)</span>. </p>
+
+<hr />
+
+<p><strong>20.</strong> </p>
+
+<p>True. If there is some <span class="math">\({\bf b}\)</span> such that the equation is inconsistent, then not every row has a pivot. So since the number or rows with pivots equals the number of columns with pivots there is a column without a pivot. <span class="math">\(A{\bf x}={\bf 0}\)</span> has non-trivial solutions so the map is not one-to-one.</p>
+
+<hr />
+
+<p><strong>24.</strong></p>
+
+<p>No.</p>
+
+<p>Not every column has a pivot.</p>
+
+<hr />
+
+<p><strong>26.</strong></p>
+
+<p>No. See #16. Above.</p>
+
+<hr />
+
+<p><strong>30.</strong></p>
+
+<p><span class="math">\(H{\bf x}={\bf 0}\)</span> has non-trivial solutions.</p>
+
+<hr />
+
+<p><strong>32.</strong></p>
+
+<p>Not necessarily. <span class="math">\(L{\bf x}={\bf 0}\)</span> always has the non-trivial solution. The useful question is whether it has non-trivial solutions.</p>
+
+<hr />
+
+<p><strong>36.</strong></p>
+
+<p>Let <span class="math">\(C\)</span> be the inverse of <span class="math">\(AB\)</span>. Then:</p>
+
+<p><span class="math">\[\begin{align*}
+C(AB)&amp;=I\\
+(CA)B&amp;=I
+\end{align*}\]</span></p>
+
+<p>From part j) of Theorem 8 (which we say in question 12) <span class="math">\(B\)</span> is invertible.</p>
+
+<hr />
+
+<p><strong>42.</strong></p>
+
+<p>The standard matrix of <span class="math">\(T\)</span> is <span class="math">\(A=\begin{bmatrix}6 &amp; -8\\-5 &amp;7\end{bmatrix}\)</span></p>
+
+<p>Then <span class="math">\(A^{-1}=\frac{1}{2}\begin{bmatrix}7 &amp; 8\\5 &amp; 6\end{bmatrix}=\begin{bmatrix}\frac{7}{2} &amp; 4\\
+\frac{5}{2} &amp; 3\end{bmatrix}\)</span></p>
+
+<p>which gives the inverse transformation:</p>
+
+<p><span class="math">\(\displaystyle T(x_1, x_2)=\left(\frac{7}{2}x_1+4x_2, \frac{5}{2}x_1+3x_2\right)\)</span></p>
+</body>
+</html>
