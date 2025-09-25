@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LA_Section_2.4</title>
+</head>
+<body>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<p>LA_Section_2.4</p>
+
+<p><strong>2.</strong></p>
+
+<p>Keep in mind that <span class="math">\(E\)</span>, <span class="math">\(F\)</span>, etc. are matrices, not real numbers.</p>
+
+<p><span class="math">\(\begin{bmatrix}
+EA &amp; EB\\
+FC &amp; FD
+\end{bmatrix}\)</span></p>
+
+<hr />
+
+<p><strong>4.</strong></p>
+
+<p><span class="math">\(\begin{bmatrix}
+A &amp; B\\
+-XA+C &amp; -XB+D
+\end{bmatrix}\)</span></p>
+
+<hr />
+
+<p><strong>8.</strong></p>
+
+<p><span class="math">\(AX=I\)</span> so <span class="math">\(X=A^{-1}\)</span></p>
+
+<p><span class="math">\(AY=0\)</span> Since <span class="math">\(A\)</span> is invertible, the only solution to this equation is <span class="math">\(Y=0\)</span></p>
+
+<p>Finally, <span class="math">\(AZ+B=0\)</span>, so <span class="math">\(AZ=-B\)</span> and <span class="math">\(Z=-A^{-1}B\)</span>. (Be careful, make sure you multiplied on the <strong>left</strong> by <span class="math">\(A^{-1}\)</span>)</p>
+
+<hr />
+
+<p><strong>10.</strong></p>
+
+<p>Start with the middle row times the first column:</p>
+
+<p><span class="math">\(C+Z=0\)</span>, so <span class="math">\(Z=-C\)</span></p>
+
+<p>The bottom row times the middle column gives <span class="math">\(B+Y=0\)</span>, so <span class="math">\(Y=-B\)</span>.</p>
+
+<p>Finally, bottom row times the first column gives <span class="math">\(A+BZ+X=0.\)</span> Substitute <span class="math">\(Z=-C\)</span>: <span class="math">\[A-BC+X=0\]</span> so <span class="math">\(X=BC-A\)</span>.</p>
+
+<hr />
+
+<p><strong>17.</strong></p>
+
+<p>Multiply the expression on the right:</p>
+
+<p><span class="math">\(\begin{bmatrix}I &amp; 0\\X &amp; I\end{bmatrix}\begin{bmatrix}A_{11} &amp; 0\\0 &amp; S\end{bmatrix}\begin{bmatrix}I &amp; Y\\0 &amp; I\end{bmatrix}=\begin{bmatrix}A_{11} &amp; 0\\XA_{11} &amp; S\end{bmatrix}\begin{bmatrix}I &amp; Y\\0 &amp; I\end{bmatrix}=\begin{bmatrix}A_{11} &amp; A_{11}Y\\XA_{11} &amp; XA_{11}Y+S\end{bmatrix}\)</span></p>
+
+<p>So: <span class="math">\(A_{12}=A_{11}Y\)</span>, and <span class="math">\(Y=A_{11}^{-1}A_{12}\)</span></p>
+
+<p><span class="math">\(A_{21}=XA_{11}\)</span>, and <span class="math">\(X=A_{21}A_{11}^{-1}\)</span></p>
+
+<p>Check the bottom right entry:</p>
+
+<p><span class="math">\[\begin{align*}
+XA_{11}Y+S&amp;=(A_{21}A_{11}^{-1})A_{11}(A_{11}^{-1}A_{12})+A_{22}-A_{21}A_{11}^{-1}A_{21}\\
+&amp;=A_{21}A_{11}^{-1}A_{12}+A_{22}-A_{21}A_{11}^{-1}A_{21}\\
+&amp;=A_{22}
+\end{align*}\]</span></p>
+</body>
+</html>
