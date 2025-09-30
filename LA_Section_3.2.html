@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LA_Section_3.2</title>
+</head>
+<body>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<p>LA_Section_3.1</p>
+
+<p><strong>6.</strong></p>
+
+<p><span class="math">\[\begin{align*}
+\begin{vmatrix}
+2&amp;2&amp;-2\\
+3&amp;4&amp;-4\\
+2&amp;-3&amp;-5
+\end{vmatrix}&amp;=2 \begin{vmatrix}
+1&amp;1&amp;-1\\
+3&amp;4&amp;-4\\
+2&amp;-3&amp;-5
+\end{vmatrix}\\
+&amp;= 2\begin{vmatrix}
+1&amp;1&amp;-1\\
+0&amp;1&amp;-1\\
+0&amp;-5&amp;-3\\
+\end{vmatrix}\\
+&amp;= 2\begin{vmatrix}
+1&amp;1&amp;-1\\
+0&amp;1&amp;-1\\
+0&amp;0&amp;-8\\
+\end{vmatrix}\\
+&amp;=-16
+\end{align*}\]</span></p>
+
+<hr />
+
+<p><strong>10.</strong></p>
+
+<p><span class="math">\[\begin{align*}
+\begin{vmatrix}
+1 &amp; 3 &amp; -1 &amp; 0 &amp; -2\\
+0&amp; 1 &amp; -2 &amp; -1 &amp; -3\\
+-2 &amp; -6 &amp; 2 &amp; 3 &amp; 10\\
+1 &amp; 5 &amp; -6 &amp; 2 &amp; -3\\
+0 &amp; 2 &amp; -4 &amp; 5 &amp; 9
+\end{vmatrix}
+&amp;= \begin{vmatrix}
+1 &amp; 3 &amp; -1 &amp; 0 &amp; -2\\
+0&amp; 1 &amp; -2 &amp; -1 &amp; -3\\
+0 &amp; 0 &amp; 0 &amp; 3 &amp; 6\\
+0 &amp; 2 &amp; -5 &amp; 2 &amp; -1\\
+0 &amp; 2 &amp; -4 &amp; 5 &amp; 9
+\end{vmatrix}\\
+&amp;= (-1)\begin{vmatrix}
+1 &amp; 3 &amp; -1 &amp; 0 &amp; -2\\
+0&amp; 1 &amp; -2 &amp; -1 &amp; -3\\
+0 &amp; 2 &amp; -5 &amp; 2 &amp; -1\\
+0 &amp; 2 &amp; -4 &amp; 5 &amp; 9\\
+0 &amp; 0 &amp; 0 &amp; 3 &amp; 6\\
+\end{vmatrix}\\
+&amp;= (-1)\begin{vmatrix}
+1 &amp; 3 &amp; -1 &amp; 0 &amp; -2\\
+0&amp; 1 &amp; -2 &amp; -1 &amp; -3\\
+0 &amp; 0 &amp; -1 &amp; 4 &amp; 5\\
+0 &amp; 0 &amp; 0 &amp; 7 &amp; 15\\
+0 &amp; 0 &amp; 0 &amp; 3 &amp; 6\\
+\end{vmatrix}\\
+&amp;= (-1)(-1)\begin{vmatrix}
+1 &amp; 3 &amp; -1 &amp; 0 &amp; -2\\
+0&amp; 1 &amp; -2 &amp; -1 &amp; -3\\
+0 &amp; 0 &amp; -1 &amp; 4 &amp; 5\\
+0 &amp; 0 &amp; 0 &amp; 3 &amp; 6\\
+0 &amp; 0 &amp; 0 &amp; 7 &amp; 15\\
+\end{vmatrix}\\
+&amp;= (-1)(-1)(3)\begin{vmatrix}
+1 &amp; 3 &amp; -1 &amp; 0 &amp; -2\\
+0&amp; 1 &amp; -2 &amp; -1 &amp; -3\\
+0 &amp; 0 &amp; -1 &amp; 4 &amp; 5\\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 2\\
+0 &amp; 0 &amp; 0 &amp; 7 &amp; 15\\
+\end{vmatrix}\\
+&amp;= (-1)(-1)(3)\begin{vmatrix}
+1 &amp; 3 &amp; -1 &amp; 0 &amp; -2\\
+0&amp; 1 &amp; -2 &amp; -1 &amp; -3\\
+0 &amp; 0 &amp; -1 &amp; 4 &amp; 5\\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 2\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1\\
+\end{vmatrix}\\
+&amp;=3
+\end{align*}\]</span></p>
+
+<hr />
+
+<p><strong>12.</strong></p>
+
+<p><span class="math">\[\begin{align*}
+\begin{vmatrix}
+-1&amp; 2 &amp; 3 &amp; 0\\
+3 &amp; 4 &amp; 3 &amp; 0\\
+11&amp; 4 &amp; 6 &amp; 6\\
+4 &amp; 2 &amp; 4 &amp; 3
+\end{vmatrix}&amp;=
+(-6)\begin{vmatrix}
+-1 &amp; 2 &amp; 3\\
+3&amp;4&amp;3\\
+4&amp; 2 &amp; 4\end{vmatrix}
++(3)\begin{vmatrix}
+-1&amp;2&amp;3\\
+3&amp;4&amp;3\\
+11&amp; 4 &amp; 6
+\end{vmatrix}\\&amp;=
+(-6)\begin{vmatrix}
+-1 &amp; 2 &amp; 3\\
+0&amp;10&amp;12\\
+0&amp; 10 &amp; 16\end{vmatrix}
++(3)\begin{vmatrix}
+-1&amp;2&amp;3\\
+0&amp;10&amp;12\\
+0&amp; 26 &amp; 39
+\end{vmatrix}\\
+&amp;=
+(-6)\begin{vmatrix}
+-1 &amp; 2 &amp; 3\\
+0&amp;10&amp;12\\
+0&amp; 0 &amp; 4\end{vmatrix}
++(3)\begin{vmatrix}
+-1&amp;2&amp;3\\
+0&amp;10&amp;12\\
+0&amp; 26 &amp; 39
+\end{vmatrix}\\
+&amp;=
+(-6)\begin{vmatrix}
+-1 &amp; 2 &amp; 3\\
+0&amp;10&amp;12\\
+0&amp; 0 &amp; 4\end{vmatrix}
++(3)(13)\begin{vmatrix}
+-1&amp;2&amp;3\\
+0&amp;10&amp;12\\
+0&amp; 2 &amp; 3
+\end{vmatrix}\\
+&amp;=
+(-6)\begin{vmatrix}
+-1 &amp; 2 &amp; 3\\
+0&amp;10&amp;12\\
+0&amp; 0 &amp; 4\end{vmatrix}
++(3)(13)\begin{vmatrix}
+-1&amp;2&amp;3\\
+0&amp; 2 &amp; 3\\
+0&amp;0&amp;-3\\
+\end{vmatrix}\\
+&amp;=(-6)(-1)(10)(4)+(3)(13)(-1)(2)(3)\\
+&amp;=240-234
+&amp;=6
+\end{align*}\]</span></p>
+
+<p>In retrospect, you could first clear the <span class="math">\(6\)</span> in the <span class="math">\((3,4)\)</span> position using the <span class="math">\(3\)</span> in the <span class="math">\((4,4)\)</span> position. </p>
+
+<hr />
+
+<p><strong>21.</strong></p>
+
+<p><span class="math">\(\text{det}A=2 (6-18)-6(2-6)=-24+24=0\)</span></p>
+
+<p>So this matrix is not invertible.</p>
+
+<hr />
+
+<p><strong>26.</strong></p>
+
+<p>Put the vectors as columns of a matrix. Expand about the last column:</p>
+
+<p><span class="math">\[\begin{align*}
+\text{det}A&amp;=-2\begin{vmatrix}
+3&amp;2&amp;-2\\
+5&amp;-6&amp;-1\\
+-6&amp;0&amp;3\end{vmatrix}\\
+&amp;=-2\left[-6(-2-12)+3(-18-10)\right]\\
+&amp;=(-2)(-6\cdot-14+3\cdot-28)\\
+&amp;=0
+\end{align*}\]</span></p>
+
+<p>So the set of vectors is linearly dependent.</p>
+
+<hr />
+
+<p><strong>30.</strong></p>
+
+<p>False. Only if the matrix is diagonal or triangular.</p>
+
+<hr />
+
+<p><strong>32.</strong></p>
+
+<p>False. If the plus were multiplication, it would be true.</p>
+
+<hr />
+
+<p><strong>37.</strong></p>
+
+<p>If <span class="math">\(A\)</span> is invertible, we can write <span class="math">\[AA^{-1}=I.\]</span></p>
+
+<p>Take the determinant of both sides:</p>
+
+<p><span class="math">\[\text{det}(AA^{-1})=\text{det}(A)\text{det}(A^{-1})=\text{det}(I)=1.\]</span></p>
+
+<p>So, <span class="math">\[\text{det}(A^{-1})=\frac{1}{\text{det}(A)}\]</span></p>
+
+<hr />
+
+<p><strong>42.</strong></p>
+
+<p><span class="math">\(r^n\text{det}(A)\)</span>: factor out an <span class="math">\(r\)</span> from each row.</p>
+
+<hr />
+</body>
+</html>
