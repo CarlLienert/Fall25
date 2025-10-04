@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LA_Section_4.1</title>
+</head>
+<body>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<p>LA_Section_4.1</p>
+
+<p><strong>2.</strong></p>
+
+<p><span class="math">\(c{\bf u}=\begin{bmatrix}cx\\cy\end{bmatrix}\)</span></p>
+
+<p>and <span class="math">\((cx\cdot cy)=c^2xy\geq0\)</span> since <span class="math">\(xy\geq0\)</span>. So, yes, <span class="math">\(c{\bf u} \in W\)</span>.</p>
+
+<p>However, <span class="math">\(W\)</span> is not closed under addition. For example: <span class="math">\(\begin{bmatrix}1\\2\end{bmatrix}+\begin{bmatrix}-3\\-1\end{bmatrix}=\begin{bmatrix}-2\\1\end{bmatrix}\)</span></p>
+
+<p>The first two vectors are in <span class="math">\(W\)</span>, the sum is not.</p>
+
+<hr />
+
+<p><strong>6.</strong></p>
+
+<p>This is not a subspace of <span class="math">\(\mathbb{P}_2\)</span>. It is not closed under scalar multiplication. For example <span class="math">\(3(2+t^2)=6+2t^2\)</span>. The format given, does not allow the <span class="math">\(t^2\)</span> term to have a coefficient other than <span class="math">\(1\)</span>.</p>
+
+<p>Even easier: the zero vector is not in the set.</p>
+
+<hr />
+
+<p><strong>8.</strong></p>
+
+<p>This is the set of polynomials with a constant term of 0. If you add two such polynomials, the constant term is still zero. If you scale a polynomial with a constant term of 0, the result is still a polynomial with a constant term of 0. This set is a subspace of <span class="math">\(\mathbb{P}_n\)</span>.</p>
+
+<hr />
+
+<p><strong>10.</strong></p>
+
+<p>This space is <span class="math">\(\text{span} \left\{\begin{bmatrix}2\\0\\-1\end{bmatrix}\right\}\)</span>. This shows the set is a subspace because that is effectively the definition of the span: it is the collection of all linear combinations of the set of given vectors. This ensures closure under addition and scalar multiplication by construction.</p>
+
+<hr />
+
+<p><strong>12.</strong></p>
+
+<p><span class="math">\(W=\text{span}\left\{\begin{bmatrix}1\\1\\2\\0\end{bmatrix}, \begin{bmatrix}3\\-1\\-1\\4\end{bmatrix}\right\}\)</span></p>
+
+<hr />
+
+<p><strong>14.</strong></p>
+
+<p>We wish to solve the vector equation <span class="math">\[a_1{\bf v_1}+a_2{\bf v_2}+a_3{\bf v_3}={\bf w}.\]</span></p>
+
+<p>The corresponding augmented matrix is:</p>
+
+<p><span class="math">\(\begin{bmatrix}1&amp;2&amp;4&amp;8\\
+0&amp;1&amp;2&amp;4\\
+-1&amp;3&amp;6&amp;7\end{bmatrix} \sim \begin{bmatrix}1&amp;0&amp;0&amp;0\\
+0&amp;1&amp;2&amp;0\\0&amp;0&amp;0&amp;1\end{bmatrix}\)</span> which shows the system is inconsistent. So <span class="math">\({\bf w}\)</span> is not in <span class="math">\(\text{span} \{{\bf v_1}, {\bf v_2}, {\bf v_3}\}.\)</span></p>
+
+<hr />
+
+<p><strong>16.</strong></p>
+
+<p>This set is not a subspace of <span class="math">\(\mathbb{R}^3\)</span>. It does not contain the zero vector. For the first two values in the vector to be <span class="math">\(0\)</span>, we need <span class="math">\(a=1\)</span> and <span class="math">\(b=\frac{1}{6}\)</span>. But for these values of <span class="math">\(a\)</span> and <span class="math">\(b\)</span>, the third entry in the vector is <span class="math">\(\frac{1}{3}+1=\frac{4}{3}\)</span>.</p>
+
+<hr />
+
+<p><strong>18.</strong></p>
+
+<p>This is a subspace of <span class="math">\(\mathbb{R}^4\)</span> and is spanned by the set:</p>
+
+<p><span class="math">\[\left\{\begin{bmatrix}4\\0\\1\\-2\end{bmatrix}, \begin{bmatrix}3\\0\\1\\0\end{bmatrix}, \begin{bmatrix}0\\0\\1\\1\end{bmatrix}\right\}.\]</span></p>
+
+<hr />
+
+<p><strong>22.</strong></p>
+
+<p>Let <span class="math">\(A\)</span> and <span class="math">\(B\)</span> be two matrices in the set <span class="math">\(H\)</span>. That is, <span class="math">\(FA=0\)</span> and <span class="math">\(FB=0\)</span>.</p>
+
+<p>Clearly, the zero matrix is in <span class="math">\(H\)</span>.</p>
+
+<p>Then <span class="math">\(F(A+B)=FA+FB=0+0=0\)</span>.</p>
+
+<p>Also, <span class="math">\(F(cA)=c(FA)=c(0)-0\)</span>.</p>
+
+<p>So, <span class="math">\(H\)</span> is closed under addition and scalar multiplication, so <span class="math">\(H\)</span> is a subset of <span class="math">\(M_{2\times 4}\)</span>.</p>
+
+<hr />
+
+<p><strong>30.</strong></p>
+
+<p>False. The elements of <span class="math">\(\mathbb{R}^2\)</span> are vector with two entries. The elements of <span class="math">\(\mathbb{R}^3\)</span> are vectors with three entries. The first set is not a subset of the second set, so it can’t be a subspace.</p>
+</body>
+</html>
