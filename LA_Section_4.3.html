@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LA_Section_4.3</title>
+</head>
+<body>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<p>LA_Section_4.3</p>
+
+<p><strong>4.</strong></p>
+
+<p>Put the vectors in as columns of a matrix <span class="math">\(A\)</span>. Row reduce and you’ll find there are 3 pivots. Thus the set of 3 vectors forms a basis for <span class="math">\(\mathbb{R}^3\)</span>.</p>
+
+<hr />
+
+<p><strong>6.</strong></p>
+
+<p>The vectors are not a scalar multiple one of the other and so the vectors are linearly independent. However, <span class="math">\(A{\bf x}={\bf b}\)</span> does not have a solution for every <span class="math">\({\bf b} \in \mathbb{R}^3\)</span> (there cannot be a pivot in every row) so the two vectors do not span <span class="math">\(\mathbb{R}^3\)</span>.</p>
+
+<hr />
+
+<p><strong>8.</strong></p>
+
+<p>Put the vectors in as columns to a matrix <span class="math">\(A\)</span>. Row reduce. You’l find there are 3 pivots, one in every row. Thus the set of 4 vectors span <span class="math">\(\mathbb{R}^3\)</span>. However, the equation <span class="math">\(A{\bf x}={\bf 0}\)</span> has non-trivial solutions (not a pivot in every column) and so the set of 4 vectors is not linearly independent.</p>
+
+<hr />
+
+<p><strong>10.</strong></p>
+
+<p>Reduce the matrix:</p>
+
+<p><span class="math">\(\begin{bmatrix}
+1 &amp; 0 &amp; -5 &amp; 0 &amp; 7\\
+0 &amp; 1 &amp; -4 &amp; 0 &amp; 6\\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -3
+\end{bmatrix}\)</span></p>
+
+<p>Write down the general solution. The vectors in this general solution give a basis for the null space:</p>
+
+<p><span class="math">\[\left\{\begin{bmatrix}5\\4\\1\\0\\0\end{bmatrix},
+\begin{bmatrix}-7\\-6\\0\\3\\1
+\end{bmatrix}\right\}\]</span></p>
+
+<hr />
+
+<p><strong>14.</strong></p>
+
+<p>A basis for <span class="math">\(\text{Col }A\)</span> is formed by the pivot columns from <span class="math">\(A\)</span>:</p>
+
+<p><span class="math">\(\left\{\begin{bmatrix}1\\2\\1\\3\end{bmatrix}\begin{bmatrix}-5\\-5\\0\\-5\end{bmatrix}, \begin{bmatrix}-3\\2\\5\\-2\end{bmatrix} \right\}\)</span></p>
+
+<p>A basis for <span class="math">\(\text{Row }A\)</span> is formed by the non-zero rows of <span class="math">\(B\)</span>:</p>
+
+<p><span class="math">\(\left\{\begin{bmatrix}1&amp;2&amp;0&amp;4&amp;5\end{bmatrix},\begin{bmatrix}0&amp;0&amp;5&amp;-7&amp;8\end{bmatrix},\begin{bmatrix}0&amp;0&amp;0&amp;0&amp;-9\end{bmatrix}\right\}\)</span></p>
+
+<p>To find a basis for <span class="math">\(\text{Nul }A\)</span>, first complete the row reduction to reduced row echelon form. Then write the general solution. A basis is then:</p>
+
+<p><span class="math">\(\left\{\begin{bmatrix}-2\\1\\0\\0\\0\end{bmatrix},\begin{bmatrix}-4\\0\\\frac{7}{5}\\1\\0\end{bmatrix}\right\}\)</span></p>
+
+<hr />
+
+<p><strong>16.</strong></p>
+
+<p>Put the vectors as columns in a matrix <span class="math">\(A\)</span>. Row reduce:</p>
+
+<p><span class="math">\(\begin{bmatrix}
+1&amp;0&amp;0&amp;-1&amp;-2\\
+0&amp;1&amp;0&amp;-3&amp;5\\
+0&amp;0&amp;1&amp;0&amp;2\\
+0&amp;0&amp;0&amp;0&amp;0\end{bmatrix}\)</span></p>
+
+<p>The first three columns have pivots. Take the first three columns from <span class="math">\(A\)</span> (the first three vectors in the list) as the basis. Make sure to take them from <span class="math">\(A\)</span>, NOT the reduced matrix.</p>
+
+<hr />
+
+<p><strong>20.</strong></p>
+
+<p>Since <span class="math">\({\bf v_1}\)</span> can be written as a linear combination of <span class="math">\({\bf v_2}\)</span> and <span class="math">\({\bf v_3}\)</span> remove <span class="math">\({\bf v_1}\)</span> from the set. Then verify that <span class="math">\({\bf v_2}\)</span> is not a scalar multiple of <span class="math">\({\bf v_3}\)</span>. A basis is then <span class="math">\(\left\{{\bf v_2}, {\bf v_3}\right\}\)</span></p>
+
+<p>In fact, any two of the vectors form a basis. Removing <span class="math">\({\bf v_1}\)</span> is just the easiest to see.</p>
+
+<hr />
+
+<p><strong>22.</strong></p>
+
+<p>False. A set must also span the subspace.</p>
+
+<hr />
+
+<p><strong>24.</strong></p>
+
+<p>True. Remove linearly dependent vectors. </p>
+
+<hr />
+
+<p><strong>30.</strong></p>
+
+<p>False.</p>
+
+<hr />
+
+<p><strong>34.</strong></p>
+
+<p>If you row reduced the matrix with the <span class="math">\(n\)</span> vectors as columns there must be pivots in every column since the set is linearly independent. Since the matrix is square, there will also be a pivot in every row and so the set spans <span class="math">\(\mathbb{R}^n\)</span>.</p>
+
+<hr />
+</body>
+</html>
