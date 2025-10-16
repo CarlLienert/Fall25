@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LA_Section_4.5</title>
+</head>
+<body>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<p>LA_Section_4.5</p>
+
+<p><strong>2.</strong></p>
+
+<p><span class="math">\(\left\{\begin{bmatrix}4\\-3\\0\end{bmatrix}, \begin{bmatrix}0\\0\\-1\end{bmatrix}\right\}\)</span></p>
+
+<p>The dimension is 2. Notice the set is linearly independent since one vector is not a scalar multiple of the other.</p>
+
+<hr />
+
+<p><strong>6.</strong></p>
+
+<p>The subspace is spanned by:</p>
+
+<p><span class="math">\(\left\{\begin{bmatrix}3\\6\\-9\\-3\end{bmatrix}, \begin{bmatrix}6\\-2\\5\\1\end{bmatrix}, \begin{bmatrix}-1\\-2\\3\\1\end{bmatrix}\right\}\)</span></p>
+
+<p>Notice that the first vector is <span class="math">\(-3\)</span> times the last vector. So, remove the first vector. (Or, the last vector, it doesn’t matter.)</p>
+
+<p>The second and third vectors are not scalar multiplies of each other so they are linearly independent.</p>
+
+<p>A basis consists of the second two vectors, and the dimension is 2.</p>
+
+<hr />
+
+<p><strong>10.</strong></p>
+
+<p>Put the vectors in as columns to matrix <span class="math">\(A\)</span>. Row reduce and you’ll find pivots in the first, second, and fourth columns. So, the dimension is 3. The first, second, and fourth columns of <span class="math">\(A\)</span> (not the reduced matrix) form a basis.</p>
+
+<hr />
+
+<p><strong>12.</strong> </p>
+
+<p>There are 3 pivots, so the dimension of <span class="math">\(\text{Col }A\)</span> is 3. The dimension of the null space is then <span class="math">\(6-3=3\)</span>.</p>
+
+<p>The dimension of the row space is the number of non-zero rows: 3.</p>
+
+<hr />
+
+<p><strong>16.</strong></p>
+
+<p>The dimension of the column space is 2. The dimension of the null space is 1. The dimension of the row space is 1.</p>
+
+<hr />
+
+<p><strong>19.</strong></p>
+
+<p>False, only if it passes through the origin.</p>
+
+<hr />
+
+<p><strong>20.</strong></p>
+
+<p>False, the dimension is 5. Think about the standard basis.</p>
+
+<hr />
+
+<p><strong>22.</strong></p>
+
+<p>True. The number of rows with pivots is the same as the number of columns with pivots.</p>
+
+<hr />
+
+<p><strong>27.</strong></p>
+
+<p>The vector representation of these polynomials as columns in a matrix is:</p>
+
+<p><span class="math">\(A=\begin{bmatrix}
+1&amp;0&amp;-2&amp;0\\
+0 &amp; 2 &amp; 0 &amp;-12\\
+0 &amp; 0 &amp; 4 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 8\end{bmatrix}.\)</span></p>
+
+<p>No row reduction is needed: you can see there are 4 pivots. This would reduce to the identity matrix. The equation <span class="math">\(A{\bf x}={\bf 0}\)</span> has only the trivial solution. Hence the polynomials (vectors) are linearly independent. Also, they span <span class="math">\(\mathbb{P}_3\)</span> since the dimension of the space is 4.</p>
+
+<hr />
+
+<p><strong>29.</strong></p>
+
+<p>Solve <span class="math">\(A [{\bf x}]_\mathcal{B}=\begin{bmatrix}7\\-12\\-8\\12\end{bmatrix}\)</span></p>
+
+<p>Using an augmented matrix is probably easiest. You’ll find <span class="math">\([{\bf x}]_\mathcal{B}=\begin{bmatrix}3\\3\\-2\\\frac{3}{2}\end{bmatrix}.\)</span></p>
+
+<hr />
+
+<p><strong>32.</strong></p>
+
+<p>A basis for <span class="math">\(H\)</span> consists of <span class="math">\(n\)</span> vectors. These vectors are also in <span class="math">\(V\)</span>. They are linearly independent regardless of whether you think of them as vectors of <span class="math">\(H\)</span> or <span class="math">\(V\)</span>. <span class="math">\(n\)</span> linearly independent vector in <span class="math">\(V\)</span> form a basis for <span class="math">\(V\)</span>. Any vector in <span class="math">\(V\)</span> can be written as a linear combination of the basis vectors for <span class="math">\(H\)</span>. So, <span class="math">\(H\)</span>=<span class="math">\(V\)</span>.</p>
+
+<hr />
+
+<p><strong>40.</strong></p>
+
+<p>Three for both. There can be at most 3 pivots.</p>
+</body>
+</html>
