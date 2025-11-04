@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LA_Section_5.5</title>
+</head>
+<body>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<p>LA_Section_5.5</p>
+
+<p><strong>2.</strong></p>
+
+<p><span class="math">\(\text{det}(A-\lambda I)=(-1-\lambda)(-5-\lambda)+5=\lambda^2+6\lambda+10\)</span></p>
+
+<p>The roots of this polynomial are:</p>
+
+<p><span class="math">\[\lambda=\frac{-6 \pm \sqrt{36-4(1)(10)}}{2}=\frac{-6 \pm \sqrt{-4}}{2}=-3 \pm i\]</span></p>
+
+<p>For <span class="math">\(\lambda=-3-i\)</span>:</p>
+
+<p><span class="math">\[A-\lambda I=\begin{bmatrix}2+i &amp; -1\\
+5 &amp; -2+i\end{bmatrix},\]</span> an eigenvector is <span class="math">\(\begin{bmatrix}-1\\2+i\end{bmatrix}\)</span>.</p>
+
+<p>For <span class="math">\(\lambda=-3+i\)</span>:</p>
+
+<p><span class="math">\[A-\lambda I =\begin{bmatrix}2-i&amp; -1\\
+5&amp; -2-i\end{bmatrix},\]</span> an eigenvector is <span class="math">\(\begin{bmatrix}1\\2-i\end{bmatrix}\)</span>.</p>
+
+<p>Each eigenvector forms a basis for the corresponding eigenspace.</p>
+
+<hr />
+
+<p><strong>8.</strong></p>
+
+<p>Following example 6:
+<span class="math">\(a=\sqrt{3}\)</span>, and <span class="math">\(b=-3\)</span>. So, the eigenvalues are <span class="math">\(\sqrt{3} \mp 3i\)</span>.</p>
+
+<p>The scale factor is <span class="math">\(r=\sqrt{a^2+b^2}=\sqrt{12}=2\sqrt{3}\)</span>.</p>
+
+<p>The rotation angle is <span class="math">\(\arctan\left(\frac{-3}{\sqrt{3}}\right)=-\frac{\pi}{3}\)</span> radians.</p>
+
+<hr />
+
+<p><strong>16.</strong></p>
+
+<p><span class="math">\(\text{det}(A-\lambda I)=(-3-\lambda)(-5-\lambda)+2=\lambda^2+8\lambda+17\)</span> so the eigenvalues are <span class="math">\(\lambda=\frac{-8\pm \sqrt{64-4(17)}}{2}=-4 \pm i\)</span>.</p>
+
+<p>For <span class="math">\(\lambda=-4+i\)</span>:</p>
+
+<p><span class="math">\[A-\lambda I=\begin{bmatrix}1-i&amp;-1\\2&amp;-1-i\end{bmatrix}\]</span> had an eigenvector of <span class="math">\({\bf x}=\begin{bmatrix}1\\1-i\end{bmatrix}=\begin{bmatrix}1\\1\end{bmatrix}+i\begin{bmatrix}0\\-1\end{bmatrix}\)</span></p>
+
+<p>Let <span class="math">\(P=\begin{bmatrix}1&amp;0\\1&amp;-1\end{bmatrix}\)</span>, so <span class="math">\(P^{-1}=-\begin{bmatrix}-1 &amp; 0\\
+-1&amp;1\end{bmatrix}\)</span></p>
+
+<p>Compute:</p>
+
+<p><span class="math">\(P^{-1}AP=-\begin{bmatrix}-1 &amp; 0\\
+-1&amp;1\end{bmatrix}\begin{bmatrix}-3&amp; -1\\2&amp;-5\end{bmatrix} \begin{bmatrix}1&amp;0\\1&amp;-1\end{bmatrix}=\begin{bmatrix}-4&amp;1\\-1&amp;-4\end{bmatrix}=C\)</span></p>
+
+<p>If you used the other eigenvalue you’ll get a different <span class="math">\(C\)</span>, but is should be of the correct form. </p>
+
+<hr />
+
+<p>I picked only one example from each set of exercises. If you want more practice, just pick one of the odds and check the answers in the back of the book.</p>
+</body>
+</html>
