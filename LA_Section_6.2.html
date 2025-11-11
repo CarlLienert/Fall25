@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LA_Section_6.2</title>
+</head>
+<body>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<p>LA_Section_6.2</p>
+
+<p><strong>2.</strong></p>
+
+<p>Compute the three different dot products. All three are zero so the set is orthogonal.</p>
+
+<hr />
+
+<p><strong>4.</strong></p>
+
+<p>The dot product of the first and third vectors is not <span class="math">\(0\)</span>, so the set is not orthogonal.</p>
+
+<hr />
+
+<p><strong>10.</strong></p>
+
+<p>Check that <span class="math">\({\bf u}_1 \cdot {\bf u}_2=0\)</span>, <span class="math">\({\bf u}_2 \cdot {\bf u}_3=0\)</span>, and <span class="math">\({\bf u}_1 \cdot {\bf u}_3=0\)</span>. Since none of these vectors is the zero vector, this set of orthogonal vectors is linearly independent and hence forms a basis for <span class="math">\(\mathbb{R}^3\)</span>.</p>
+
+<p>To write <span class="math">\({\bf x}\)</span> as a linear combination of the basis vectors, compute:</p>
+
+<p><span class="math">\[\begin{align*}
+c_1&amp;=\frac{{\bf x}\cdot {\bf u}_1}{{\bf u}_1\cdot {\bf u}_1}=\frac{15+9}{9+9}=\frac{24}{18}=\frac{4}{3}\\ \\
+c_2&amp;= \frac{{\bf x}\cdot {\bf u}_2}{{\bf u}_2\cdot {\bf u}_2}=\frac{10-6-1}{4+4+1}=\frac{3}{9}=\frac{1}{3}\\ \\
+c_3&amp;= \frac{{\bf x}\cdot {\bf u}_3}{{\bf u}_3\cdot {\bf u}_3}=\frac{5-3+4}{1+1+16}=\frac{6}{18}=\frac{1}{3}\\ \\
+\end{align*}\]</span></p>
+
+<p>So <span class="math">\({\bf x}=\frac{4}{3}{\bf u}_1+\frac{1}{3}{\bf u}_2+\frac{1}{3}{\bf u}_3.\)</span></p>
+
+<hr />
+
+<p><strong>12.</strong></p>
+
+<p>The projection of <span class="math">\({\bf a}=\begin{bmatrix}1\\-1\end{bmatrix}\)</span> onto <span class="math">\({\bf b}=\begin{bmatrix}-1\\2\end{bmatrix}\)</span> is <span class="math">\[\frac{{\bf a}\cdot {\bf b}}{{\bf b}\cdot {\bf b}}{\bf b}=\frac{-1-2}{1+4}\begin{bmatrix}-1\\2\end{bmatrix}=\frac{-3}{5}\begin{bmatrix}-1\\2\end{bmatrix}=\begin{bmatrix}3/5\\-6/5\end{bmatrix}\]</span></p>
+
+<hr />
+
+<p><strong>14.</strong> </p>
+
+<p>The projection of <span class="math">\({\bf y}\)</span> onto <span class="math">\(\text{span} \{{\bf u}\}\)</span> is <span class="math">\[\frac{{\bf y}\cdot {\bf u}}{{\bf u}\cdot {\bf u}}{\bf u}=\frac{12+6}{36+1}{\bf u}=\frac{18}{37}{\bf u}={\bf u}_\parallel\]</span></p>
+
+<p>We want <span class="math">\({\bf y}={\bf u}_\parallel+{\bf u}_\perp\)</span>, so <span class="math">\[{\bf u}\perp={\bf y}-{\bf u}_\parallel=\begin{bmatrix}2\\6\end{bmatrix}-\frac{18}{37}\begin{bmatrix}6\\1\end{bmatrix}=\begin{bmatrix}-34/37\\204/37\end{bmatrix}.\]</span></p>
+
+<hr />
+
+<p><strong>16.</strong></p>
+
+<p>First, find the projection of <span class="math">\({\bf y}\)</span> onto the line through <span class="math">\({\bf u}\)</span>:</p>
+
+<p><span class="math">\({\bf u}_\parallel=\begin{bmatrix}3\\6\end{bmatrix}\)</span>. Then <span class="math">\({\bf u}\perp={\bf y}-{\bf u}_\parallel=\begin{bmatrix}-6\\3\end{bmatrix}\)</span> whose magnitude is <span class="math">\(\sqrt{36+9}=\sqrt{45}=3\sqrt{5}\)</span> which is the distance from <span class="math">\({\bf y}\)</span> to the line through <span class="math">\({\bf u}\)</span>.</p>
+
+<hr />
+
+<p><strong>20.</strong></p>
+
+<p>The two vectors are orthogonal. The magnitude of the first vector is <span class="math">\(\sqrt{\frac{4}{9}+\frac{4}{9}+\frac{1}{9}}=1\)</span> so it is a unit vector. The magnitude of the second vector is <span class="math">\(\sqrt{\frac{1}{9}+\frac{4}{9}}=\frac{\sqrt{5}}{3}\)</span> so the second vector is not a unit vector. It can be normalized by scaling by <span class="math">\(\frac{3}{\sqrt{5}}\)</span> to obtain <span class="math">\(\begin{bmatrix}\frac{1}{\sqrt{5}}\\\frac{2}{\sqrt{5}}\end{bmatrix}.\)</span> Now the original first vector and the normalized second vector are an orthonormal set.</p>
+
+<hr />
+</body>
+</html>
