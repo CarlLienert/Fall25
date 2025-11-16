@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LA_Section_6.3</title>
+</head>
+<body>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<p>LA_Section_6.3</p>
+
+<p><strong>2.</strong></p>
+
+<p>Since the 4 vectors form an orthogonal basis for <span class="math">\(\mathbb{R}^4\)</span> we’ll find a projection onto <span class="math">\(\text{span}\{{\bf u}_1\}\)</span>. Subtraction will yield the other vector.</p>
+
+<p><span class="math">\(\text{proj}_{{\bf u}_1}{\bf v}=\frac{{\bf y}\cdot{\bf u}_1}{{\bf u}_1\cdot {\bf u_1}}{\bf u}_1=\frac{14}{7}\begin{bmatrix}1\\2\\1\\1\end{bmatrix}=\begin{bmatrix}2\\4\\2\\2\end{bmatrix}\)</span></p>
+
+<p>The vector in <span class="math">\(\text{span}\left\{{\bf u}_2, {\bf u}_3, {\bf u}_4\right\}\)</span> is <span class="math">\[{\bf v}-\text{proj}_{{\bf u}_1}=\begin{bmatrix}4\\5\\-2\\2\end{bmatrix}-\begin{bmatrix}2\\4\\2\\2\end{bmatrix}=\begin{bmatrix}2\\1\\-4\\0\end{bmatrix}.\]</span></p>
+
+<hr />
+
+<p><strong>4.</strong></p>
+
+<p><span class="math">\({\bf u}_1 \cdot {\bf u}_2=0\)</span> so the set is orthogonal.</p>
+
+<p><span class="math">\(\text{proj}({\bf y})=\frac{12+12}{9+16}{\bf u}_1+\frac{-16+9}{16+9}{\bf u}_2=\frac{24}{25}\begin{bmatrix}3\\4\\0\end{bmatrix}+\frac{-7}{25}\begin{bmatrix}-4\\3\\0\end{bmatrix}=\begin{bmatrix}4\\3\\0\end{bmatrix}\)</span></p>
+
+<hr />
+
+<p><strong>10.</strong></p>
+
+<p><span class="math">\[\begin{align*}
+\text{proj}_W{\bf y}=\frac{3}{3}{\bf u}_1+\frac{12}{3}{\bf u}_2+\frac{-3}{3}{\bf u}_3=\begin{bmatrix}5\\2\\3\\4\end{bmatrix}
+\end{align*}\]</span></p>
+
+<p>The vector orthogonal to <span class="math">\(W\)</span> is:</p>
+
+<p><span class="math">\({\bf y}-\text{proj}_W{\bf y}=\begin{bmatrix}-2\\2\\2\\0\end{bmatrix}.\)</span></p>
+
+<hr />
+
+<p><strong>12.</strong></p>
+
+<p>The closest point is the projection of <span class="math">\({\bf y}\)</span> onto <span class="math">\(W\)</span>. This vector is <span class="math">\(\begin{bmatrix}-1\\-5\\-3\\9\end{bmatrix}.\)</span></p>
+
+<hr />
+
+<p><strong>16.</strong></p>
+
+<p>We’ll find <span class="math">\(\|{\bf y}-\text{proj}_W{\bf y}\|\)</span>.</p>
+
+<p><span class="math">\({\bf y}-\text{proj}_W{\bf y}=\begin{bmatrix}4\\4\\4\\4\end{bmatrix}\)</span> whose magnitude is <span class="math">\(\sqrt{4\cdot 4^2}=8\)</span></p>
+
+<hr />
+
+<p><strong>18.</strong></p>
+
+<p><span class="math">\(U^TU=1\)</span> which confirms that <span class="math">\({\bf u}_1\)</span> is a unit vector.</p>
+
+<p><span class="math">\(UU^T=\begin{bmatrix}\frac{1}{10} &amp; \frac{-3}{10}\\ \\
+\frac{-3}{10} &amp; \frac{9}{10}\end{bmatrix}\)</span></p>
+
+<p><span class="math">\(\text{proj}_W{\bf y}=UU^T{\bf y}=\begin{bmatrix}-2\\6\end{bmatrix}\)</span></p>
+
+<hr />
+</body>
+</html>
