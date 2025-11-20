@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LA_Section_6.5</title>
+</head>
+<body>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<p>LA_Section_6.5</p>
+
+<p><strong>2.</strong></p>
+
+<p><span class="math">\(A^TA=\begin{bmatrix}2&amp;-2&amp;2\\
+1 &amp; 0 &amp; 3\end{bmatrix}\begin{bmatrix}2&amp;1\\
+-2&amp;0\\
+2&amp;3\end{bmatrix}=\begin{bmatrix}12&amp;8\\
+8 &amp; 10\end{bmatrix}\)</span></p>
+
+<p><span class="math">\((A^TA)^{-1}=\frac{1}{56}\begin{bmatrix}10&amp;-8\\-8&amp;6\end{bmatrix}\)</span></p>
+
+<p><span class="math">\[\begin{align*}
+(A^TA)^{-1}A^T{\bf b}&amp;=\frac{1}{56}\begin{bmatrix}12&amp;-8\\-8&amp;10\end{bmatrix}\begin{bmatrix}2&amp;-2&amp;2\\
+1 &amp; 0 &amp; 3\end{bmatrix}\begin{bmatrix}-5\\8\\1\end{bmatrix}\\
+&amp;= \frac{1}{56}\begin{bmatrix}10&amp;-8\\-8&amp;12\end{bmatrix}\begin{bmatrix}-24\\-2\end{bmatrix}\\
+&amp;=\frac{1}{56}\begin{bmatrix}-224\\168\end{bmatrix}\\
+&amp;=\begin{bmatrix}-4\\3\end{bmatrix} ={\bf \hat{x}}
+\end{align*}\]</span></p>
+
+<hr />
+
+<p><strong>6.</strong></p>
+
+<p>Solve <span class="math">\(A^TA{\bf x}=A^T{\bf b}\)</span>.</p>
+
+<p><span class="math">\(A^TA=\begin{bmatrix}6&amp;3&amp;3\\
+3&amp;3&amp;0\\
+3&amp;0&amp;3\end{bmatrix}\)</span></p>
+
+<p><span class="math">\(A^T{\bf b}=\begin{bmatrix}27\\11\\15\end{bmatrix}\)</span></p>
+
+<p>Row reduce the augmented matrix to obtain: <span class="math">\[\begin{bmatrix}1&amp;0&amp;1&amp;5\\
+0&amp;1&amp;1&amp;-1\\
+0&amp;0&amp;0&amp;0\end{bmatrix}\]</span></p>
+
+<p>So the general solution is <span class="math">\[{\bf \hat{x}}=\begin{bmatrix}5\\-1\\0\end{bmatrix}+x_3\begin{bmatrix}-1\\1\\1\end{bmatrix}.\]</span></p>
+
+<p>These are the least squares solutions.</p>
+
+<hr />
+
+<p><strong>12.</strong></p>
+
+<p>The columns of <span class="math">\(A\)</span> are orthogonal so the projection of <span class="math">\({\bf b}\)</span> onto the column space of <span class="math">\(A\)</span> is:</p>
+
+<p><span class="math">\[\begin{align*}
+&amp;\frac{2+5-6}{3}\begin{bmatrix}1\\1\\0\\-1\end{bmatrix}+\frac{2+6+6}{3}\begin{bmatrix}1\\0\\1\\1\end{bmatrix}+\frac{-5+6-6}{3}\begin{bmatrix}0\\-1\\1\\-1\end{bmatrix}\\
+&amp;= \frac{1}{3}\begin{bmatrix}1\\1\\0\\-1\end{bmatrix}+\frac{14}{3}\begin{bmatrix}1\\0\\1\\1\end{bmatrix}+-\frac{5}{3}\begin{bmatrix}0\\-1\\1\\-1\end{bmatrix}\\
+&amp;=\begin{bmatrix}5\\2\\3\\6\end{bmatrix}
+\end{align*}\]</span></p>
+
+<p>The least squares solution is the solution to <span class="math">\(A{\bf x}={\bf \hat{b}}\)</span>. From above the solution is: <span class="math">\({\bf \hat{x}}=\begin{bmatrix}1/3\\14/3\\-5/3\end{bmatrix}\)</span></p>
+
+<hr />
+
+<p><strong>16.</strong></p>
+
+<p><span class="math">\(Q^T{\bf b}=\begin{bmatrix}17/2\\9/2\end{bmatrix}\)</span></p>
+
+<p>Solve <span class="math">\(R{\bf x}=Q^T{\bf b}\)</span>.</p>
+
+<p>The augmented matrix is:</p>
+
+<p><span class="math">\[\begin{bmatrix}2&amp;3&amp;17/2\\
+0&amp;5&amp;9/2\end{bmatrix}\]</span></p>
+
+<p>So, <span class="math">\(x_2=\frac{9}{10}\)</span>.</p>
+
+<p>Then <span class="math">\(2x_1+3\cdot \frac{9}{10}=\frac{17}{2}\)</span> and <span class="math">\(x_1=\frac{29}{10}\)</span>. So <span class="math">\({\bf \hat{x}}=\begin{bmatrix}\frac{29}{10}\\ \\\frac{9}{10}\end{bmatrix}\)</span></p>
+</body>
+</html>
